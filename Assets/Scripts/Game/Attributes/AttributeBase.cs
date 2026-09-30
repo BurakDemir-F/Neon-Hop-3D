@@ -15,4 +15,11 @@ public abstract class AttributeBase : MonoBehaviour
     {
         
     }
+
+    public abstract AttributeWork DoAttributeWork();
+}
+
+public ref struct AttributeWork
+{
+    public bool RequireTween;
 }
