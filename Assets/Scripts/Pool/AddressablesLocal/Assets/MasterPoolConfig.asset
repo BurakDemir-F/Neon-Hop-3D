@@ -1,0 +1,651 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b8f2bf9f304d5eb8d098b5d3ed894a, type: 3}
+  m_Name: MasterPoolConfig
+  m_EditorClassIdentifier: 
+  PoolConfig:
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 3
+    PoolKey: InventoryItemOptionUI
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 547b3b133fbc7724fae70eab125ab759
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: InventoryItemSelectionScreen
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 2d9b6947fe5b2214193543f928a79570
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 3
+    PoolKey: InventoryItemUI
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 5ecb707f931ee084b97d7ae0a47bd898
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: InGameInventoryScreen
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 1250e317bb5611244838027555f5bdad
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: InGameInventoryLayout
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 172c051e59ba9f049a6d27763b4c4b6f
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: TeamSelectionScreen
+    Creator: {fileID: 11400000, guid: bd104e4b7d11d8e47992661683d35ea7, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 466fc8950f12ebc44a9ac3e325b10027
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: TeamSelectionUI
+    Creator: {fileID: 11400000, guid: bd104e4b7d11d8e47992661683d35ea7, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 1861ab34ada33bc46b6c4afcf51364da
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: CreateGameScreen
+    Creator: {fileID: 11400000, guid: bd104e4b7d11d8e47992661683d35ea7, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: d402a757bc2340d499cdab4644f4a122
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: MainMenuScreen
+    Creator: {fileID: 11400000, guid: bd104e4b7d11d8e47992661683d35ea7, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 268ef1a4a7415564dadaa2e63eeb28cb
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: CreateCharacterScreen
+    Creator: {fileID: 11400000, guid: bd104e4b7d11d8e47992661683d35ea7, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 5f484f3c57e78b54d81de7e01b366a59
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: CharacterButton
+    Creator: {fileID: 11400000, guid: bd104e4b7d11d8e47992661683d35ea7, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 011f1f404717de64dbd405c10b2cb5ff
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: InfoScreen
+    Creator: {fileID: 11400000, guid: bd104e4b7d11d8e47992661683d35ea7, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: fb7146eec7f54c54c925dc8041e79463
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: JoinLobbyScreen
+    Creator: {fileID: 11400000, guid: bd104e4b7d11d8e47992661683d35ea7, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: c25ea8045a82c2946a1efa343870282d
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 10
+    PoolKey: LobbyItemUI
+    Creator: {fileID: 11400000, guid: bd104e4b7d11d8e47992661683d35ea7, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 8e9b82169dc495549934d1220e0870cd
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: TurnInfoScreen
+    Creator: {fileID: 11400000, guid: bd104e4b7d11d8e47992661683d35ea7, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 5c0c48654b7686246b0da50464ed82e8
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 10
+    PoolKey: DefaultStaff
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 731f51cb5fa96c344a32837dc98b552e
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 10
+    PoolKey: FireBallSpell
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: a7c8613f06cfff5418e69f17e66e8160
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 10
+    PoolKey: FireBallSpellEffect_Client
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 6457e6b7fa8a13240ac70902d625c70b
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 3
+    PoolKey: LavaGolemSpell
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: f641b0c71d84b53469b48e15edad8ecd
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 3
+    PoolKey: TeleportationSpell
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 2e26dd639f83e974c8f097f2e1e3e7f2
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 3
+    PoolKey: TeleportationSpellEffect
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 110c0fc9bb5f7e9458656da6426f8f97
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 3
+    PoolKey: FireBreather_Client
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 49a1ff71afef1bb43b782def419ad2d1
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 3
+    PoolKey: Necromancer_Client
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 011059341e87ac54dafccc04bb195930
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 3
+    PoolKey: LavaGolemSpellEffect_Client
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: cbf31894df9cd4140b32db912e779213
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 3
+    PoolKey: LavaGolemSpellEffect_Server
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: c8e34ce0b8b480e41ab1ffd6747f7544
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 3
+    PoolKey: ExtendLifeSpell
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: f5b1cfb41d9237e409acb86439dd7470
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 3
+    PoolKey: ExtendLifeSpellEffect_Client
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: d61c089d8d30aea4b8550dac89e4abd0
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 3
+    PoolKey: ConstantForce
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 91c3c487af985ee4ca91aa83e5ab25f2
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 3
+    PoolKey: ConstantForceSpellEffect_Client
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 466bd727d931b82428132614b8098023
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 3
+    PoolKey: ConstantForceSpellEffect_Server
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 513d2beb02c1c3d439153b9785456707
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: Druid_Client
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 429adfd82ddabc94da819f3af1d727ff
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: Druid_Server
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: a5d9460852a8d84478d1352c8ed32724
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: FireBreather_Server
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 34b7bd0257fba5b48bba37307d888a83
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: Necromancer_Server
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 8919582266acf73408c285ab5be41223
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: SpellSelectionScreen
+    Creator: {fileID: 11400000, guid: bd104e4b7d11d8e47992661683d35ea7, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: f9a31bcbfd51f2f4e8fbffbc89a517a0
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: TimerScreen
+    Creator: {fileID: 11400000, guid: bd104e4b7d11d8e47992661683d35ea7, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: c01816da51274f949a384bc9e3e5a8a9
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: theGreatSerpent_Client
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: cafdbcd28424c154a908f44adcab797b
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: theGreatSerpent_Server
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: bb041cd8b29fa7e40b805d9ca90cca80
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: forceExplosionClient
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 04c48c092f2de574dafe881121c6bdb6
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: forceExplosion
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 8b80bb50b0990d746ba00023514deb82
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: undeadSkeleton
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: dda611bf1b39fcb44a503aafc664f5dd
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: undeadSkeleton_client
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: b667f26cbf1e37f4496ebc37b6bd65f8
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: undeadSkeleton_server
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: b88f2252509210444b132424ad0f0f19
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: justABone
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 433fa15bdec101446bf04671d5e982bb
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: justABone_client
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 37008d290c827be489a67d4ab55ee12f
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: justABone_server
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: dcaa080a7916668469d11554bc26410f
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: ghostKnight
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 6279d30b0afc0744b8003892ff98e16d
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: ghostKnight_client
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: fb9e233d6ed49e74c8a7216083e435dc
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: ghostKnight_server
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 07e7f8fc072b2174290d921f1e88d497
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: echoesOfAfterLife
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 56b2e0b064587ea43b9437f20af6d26a
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: echoesOfAfterLife_client
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 4dfe167784b98df43a2d92ab2e670b3e
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: echoesOfAfterLife_server
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 3299f6527d0e7d148b9f29e3d0eeb59a
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
+  - PoolObjectPrefab: {fileID: 0}
+    DefaultCapacity: 1
+    PoolKey: LoadingScreen
+    Creator: {fileID: 11400000, guid: fb8e20d1e736e554596ca38698a6bbf1, type: 2}
+    Releaser: {fileID: 11400000, guid: 8a03f90d485ba24498d00523d1d04a8f, type: 2}
+    UseAddressable: 1
+    AssetReference:
+      m_AssetGUID: 7f84c58ad89b642419a233a62d4a4414
+      m_SubObjectName: 
+      m_SubObjectType: 
+      m_SubObjectGUID: 
+      m_EditorAssetChanged: 0
