@@ -13,6 +13,11 @@ namespace Game.Sorcerum
 
         public void Initialize(IContextProvider contextProvider)
         {
+            _attributeCollection.Clear();
+            
+            foreach (var attributeBase in _ballData.Brain.AttributeBaseList)
+                _attributeCollection.UpdateObject(attributeBase);
+            
             foreach (var attributeBase in _attributeCollection)
                 attributeBase.Initialize(contextProvider);
         }

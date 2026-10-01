@@ -5,18 +5,18 @@ using UnityEngine;
 
 namespace General.GridSystem
 {
-    public class Grid : IGrid
+    public class Grid<T> : IGrid<T> where T : IGridCell
     {
-        protected IGridCell[,] _items;
+        protected T[,] _items;
         protected int _xDimension;
         protected int _yDimension;
         
-        public Grid(IReadOnlyList<IGridCell> cells, int xDimension,int yDimension)
+        public Grid(IReadOnlyList<T> cells, int xDimension,int yDimension)
         {
             _xDimension = xDimension;
             _yDimension = yDimension;
 
-            _items = new IGridCell[_xDimension, _yDimension];
+            _items = new T[_xDimension, _yDimension];
 
             for (int i = 0; i < xDimension; i++)
             {
@@ -35,7 +35,7 @@ namespace General.GridSystem
             return xDimension * yPos + xPos;
         }
         
-        public void SetCell(IGridCell cell)
+        public void SetCell(T cell)
         {
             _items[cell.XPos, cell.YPos] = cell;
         }
@@ -50,18 +50,18 @@ namespace General.GridSystem
             return new Vector2Int(_xDimension, _yDimension);
         }
 
-        public virtual IGridCell GetLast()
+        public virtual T GetLast()
         {
             return this[_xDimension - 1, _yDimension - 1];
         }
 
-        public virtual IGridCell GetFirst()
+        public virtual T GetFirst()
         {
             return this[0, 0];
         }
       
 
-        public IGridCell this[int x, int y]
+        public T this[int x, int y]
         {
             get
             {
@@ -78,7 +78,7 @@ namespace General.GridSystem
             }
         }
 
-        public bool TryGetNextCell(IGridCell cell,Direction direction, out IGridCell nextCell)
+        public bool TryGetNextCell(T cell,Direction direction, out T nextCell)
         {
             var neighbors = GetNeighbors(cell);
             foreach (var neighbor in neighbors)
@@ -94,17 +94,17 @@ namespace General.GridSystem
             return false;
         }
 
-        public List<Neighbor> GetNeighbors(IGridCell cell)
+        public List<Neighbor<T>> GetNeighbors(T cell)
         {
-            var neighbors = new List<Neighbor>();
+            var neighbors = new List<Neighbor<T>>();
 
             var x = cell.XPos;
             var y = cell.YPos;
 
-            if (IsExists(x + 1, y)) neighbors.Add(new Neighbor(Direction.Right,this[x + 1, y]));
-            if (IsExists(x - 1, y)) neighbors.Add(new Neighbor(Direction.Left,this[x - 1, y]));
-            if (IsExists(x, y + 1)) neighbors.Add(new Neighbor(Direction.Forward,this[x, y + 1]));
-            if (IsExists(x, y - 1)) neighbors.Add(new Neighbor(Direction.Back,this[x, y - 1]));
+            if (IsExists(x + 1, y)) neighbors.Add(new Neighbor<T>(Direction.Right,this[x + 1, y]));
+            if (IsExists(x - 1, y)) neighbors.Add(new Neighbor<T>(Direction.Left,this[x - 1, y]));
+            if (IsExists(x, y + 1)) neighbors.Add(new Neighbor<T>(Direction.Forward,this[x, y + 1]));
+            if (IsExists(x, y - 1)) neighbors.Add(new Neighbor<T>(Direction.Back,this[x, y - 1]));
 
             return neighbors;
         }
@@ -114,7 +114,7 @@ namespace General.GridSystem
             return (xPos >= 0 && xPos < _xDimension && yPos >= 0 && yPos < _yDimension);
         }
 
-        public IEnumerator<IGridCell> GetEnumerator()
+        public IEnumerator<T> GetEnumerator()
         {
             for (var i = 0; i < _xDimension; i++)
             {

@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Game.Sorcerum
 {
-    [CreateAssetMenu(menuName = "ScriptableObject/Ball Data", fileName = "BallData", order = 0)]
+    [CreateAssetMenu(menuName = "ScriptableData/Ball Data", fileName = "BallData", order = 0)]
     public class BallDataSo : ScriptableObject
     {
         [SerializeField] private BrainSo _brain;

@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b8f2bf9f304d5eb8d098b5d3ed894a, type: 3}
+  m_Name: PoolConfig
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Pool.AddressablesLocal.Scripts.SO.PoolConfigSo
+  PoolConfig:
+  - PoolObjectPrefab: {fileID: 6283942102737392500, guid: 8a617c9f95c98834daed32789c299565, type: 3}
+    DefaultCapacity: 3
+    PoolKey: simpleBall
+    Creator: {fileID: 11400000, guid: b3ecf5103f0bf6d4682d641b8fc4ae1e, type: 2}
+    Releaser: {fileID: 0}
+  - PoolObjectPrefab: {fileID: 2589464465672119599, guid: a87dfd3820f98794b80dabfce1c7f966, type: 3}
+    DefaultCapacity: 36
+    PoolKey: emptyGridCell
+    Creator: {fileID: 11400000, guid: b3ecf5103f0bf6d4682d641b8fc4ae1e, type: 2}
+    Releaser: {fileID: 0}
+  - PoolObjectPrefab: {fileID: 6232306119490524398, guid: 1fb5acd88cf8f654a99346e1ab031ac6, type: 3}
+    DefaultCapacity: 36
+    PoolKey: simpleStack
+    Creator: {fileID: 11400000, guid: b3ecf5103f0bf6d4682d641b8fc4ae1e, type: 2}
+    Releaser: {fileID: 0}
+  - PoolObjectPrefab: {fileID: 329188512399950478, guid: b09b0a939f4490f45ba5fd5893155146, type: 3}
+    DefaultCapacity: 36
+    PoolKey: stackGridCell
+    Creator: {fileID: 11400000, guid: b3ecf5103f0bf6d4682d641b8fc4ae1e, type: 2}
+    Releaser: {fileID: 0}
+  - PoolObjectPrefab: {fileID: 3870810885659329724, guid: 364237cff91fc5245b2f64078543771d, type: 3}
+    DefaultCapacity: 36
+    PoolKey: simpleStackableItem
+    Creator: {fileID: 11400000, guid: b3ecf5103f0bf6d4682d641b8fc4ae1e, type: 2}
+    Releaser: {fileID: 0}

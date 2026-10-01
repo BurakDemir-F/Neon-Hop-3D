@@ -4,7 +4,8 @@ using UnityEngine;
 
 namespace Game.Pool.AddressablesLocal.Scripts.Creators
 {
-    public class MazeWorldCreator : PoolObjectCreator
+    [CreateAssetMenu(menuName = "ScriptableData/Pool/PoolObjectCreator", fileName = "SimpleCreator", order = 0)]
+    public class SimpleCreator : PoolObjectCreator
     {
         public override IPoolObject CreatePoolBehaviour(PoolConfig config, IPool pool, Transform root)
         {

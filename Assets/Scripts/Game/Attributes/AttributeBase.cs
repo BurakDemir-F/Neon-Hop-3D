@@ -1,7 +1,8 @@
 using General;
 using UnityEngine;
 
-public abstract class AttributeBase : MonoBehaviour
+[System.Serializable]
+public abstract class AttributeBase
 {
     protected IContextProvider _context;
     

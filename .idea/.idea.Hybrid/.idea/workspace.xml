@@ -5,33 +5,51 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8203772f-3af4-49c8-aa94-5113814ff257" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hybrid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hybrid/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/AttributeBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/AttributeBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/CrackAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/CrackAttribute.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/JumpAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/JumpAttribute.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/BallBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/BallBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/ItemStack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/ItemStack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/StackableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/StackableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BallDataSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BallDataSo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BrainSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BrainSo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Data/LevelDataSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Data/LevelDataSo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Data/StackableItemDataSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Data/StackableItemDataSo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/Grid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/Grid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/IGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/IGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/Neighbor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/Neighbor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/WorldGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/WorldGrid.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Assets/MasterPoolConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Assets/MasterPoolConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Creators/MazeWorldCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Creators/SimpleCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Creators/MazeWorldCreator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Creators/SimpleCreator.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "BurakDemir-F"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;BurakDemir-F&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/BurakDemir-F/Hybrid.git",
-    "accountId": "a484de53-1415-4467-b279-0c370c756f07"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/BurakDemir-F/Hybrid.git&quot;,
+    &quot;accountId&quot;: &quot;a484de53-1415-4467-b279-0c370c756f07&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/PropertyDrawers/SubclassSelectorDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Attributes/CrackAttribute.cs" root0="FORCE_HIGHLIGHTING" />
@@ -39,17 +57,24 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Data/BallDataSo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Data/LevelDataSo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Data/PoolKey.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/EmptyGridCell.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/Grid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/WorldGrid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/MapGridCell.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/StackGridCell.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Assets/AddressableObjectPoolCreator.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/1b6535aa091d41cf8b3ca222ed9ceef0212600/2e/89cb2163/Transform.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/1b6535aa091d41cf8b3ca222ed9ceef0212600/da/e28df4fa/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/1b6535aa091d41cf8b3ca222ed9ceef0212600/f8/9001c8b5/Vector3.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/2e4eaf245b924ed1b8c17467295ae042a6ca00/ce/e4e395f0/SerializedProperty.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3K11bD7TodUoBhoewZuJspiv4ot" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -60,6 +85,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
@@ -67,6 +93,7 @@
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
     "junie.onboarding.icon.badge.shown": "true",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
@@ -91,13 +118,15 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false" ignored-value-for-modified-check="23364">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="23364" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -115,7 +144,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1790710332045</updated>
-      <workItem from="1790710333673" duration="9193000" />
+      <workItem from="1790710333673" duration="9364000" />
+      <workItem from="1790880900337" duration="4485000" />
+      <workItem from="1790886296739" duration="4115000" />
     </task>
     <task id="LOCAL-00001" summary="working on the game.">
       <option name="closed" value="true" />
@@ -125,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790771698945</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="changes.">
+      <option name="closed" value="true" />
+      <created>1790789577466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1790789577466</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -150,7 +189,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="working on the game." />
-    <option name="LAST_COMMIT_MESSAGE" value="working on the game." />
+    <MESSAGE value="changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="changes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -167,6 +207,32 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Editor/PropertyDrawers/SubclassSelectorDrawer.cs</url>
+          <line>20</line>
+          <properties documentPath="C:\UserData\Projects\hybridCasual\Hybrid\Assets\Scripts\Editor\PropertyDrawers\SubclassSelectorDrawer.cs" containingFunctionPresentation="Method 'CreatePropertyGUI'">
+            <startOffsets>
+              <option value="655" />
+            </startOffsets>
+            <endOffsets>
+              <option value="686" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelManager.cs</url>
+          <line>92</line>
+          <properties documentPath="C:\UserData\Projects\hybridCasual\Hybrid\Assets\Scripts\Game\Level\LevelManager.cs" containingFunctionPresentation="Method 'CreateGrid'">
+            <startOffsets>
+              <option value="3156" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3157" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

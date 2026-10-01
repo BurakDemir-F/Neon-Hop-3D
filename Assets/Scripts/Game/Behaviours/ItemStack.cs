@@ -11,6 +11,8 @@ namespace Game.Sorcerum
         [SerializeField] private Transform _stackRoot;
         private List<StackableItem> _itemList = new();
 
+        public Transform StackRoot => _stackRoot;
+
         public void Initialize(StackableItemStackData stackableItemStackData)
         {
             _stackableItemStackData = stackableItemStackData;
@@ -20,6 +22,10 @@ namespace Game.Sorcerum
         {
             _itemList.Add(stackableItem);
             stackableItem.Transform.SetParent(_stackRoot);
+
+            stackableItem.transform.localPosition = new Vector3(0f,
+                _itemList.Count * _stackableItemStackData.ItemDistance,
+                0f);
         }
 
         public StackableItem RemoveFromStack()

@@ -2,9 +2,9 @@ using UnityEngine;
 
 namespace Game.Sorcerum
 {
+    [CreateAssetMenu(menuName = "ScriptableData/Stackable Item", fileName = "Stackable Item", order = 0)]
     public class StackableItemDataSo : ScriptableObject
     {
-        [SerializeField] private Vector2Int _gridPos;
         [SerializeField] private BrainSo _brain;
         [SerializeField] private PoolKey _poolKey;
 
@@ -12,11 +12,5 @@ namespace Game.Sorcerum
         
 
         public PoolKey PoolKey => _poolKey;
-
-        public Vector2Int GridPos
-        {
-            get => _gridPos;
-            set => _gridPos = value;
-        }
     }
 }

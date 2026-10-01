@@ -3,14 +3,14 @@ using UnityEngine;
 
 namespace General.GridSystem
 {
-    public interface IGrid : IEnumerable<IGridCell>
+    public interface IGrid<T> : IEnumerable<T> where T : IGridCell
     {
         int GetSize();
         Vector2Int GetDimensions();
-        IGridCell GetLast();
-        IGridCell GetFirst();
-        IGridCell this[int x, int y] { get; set; }
-        bool TryGetNextCell(IGridCell cell, Direction direction, out IGridCell nextCell);
-        List<Neighbor> GetNeighbors(IGridCell cell);
+        T GetLast();
+        T GetFirst();
+        T this[int x, int y] { get; set; }
+        bool TryGetNextCell(T cell, Direction direction, out T nextCell);
+        List<Neighbor<T>> GetNeighbors(T cell);
     }
 }
