@@ -1,0 +1,96 @@
+.screen-root {
+    position: absolute;
+    bottom: 24px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tray {
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(26, 32, 44, 0.88);
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-left-color: rgba(255, 255, 255, 0.15);
+    border-right-color: rgba(255, 255, 255, 0.15);
+    border-top-color: rgba(255, 255, 255, 0.15);
+    border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+.header-label {
+    color: rgba(220, 230, 245, 0.9);
+    font-size: 13px;
+    -unity-font-style: bold;
+    margin-bottom: 10px;
+}
+
+.balls-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.ball-item {
+    width: 72px;
+    height: 72px;
+    margin-left: 8px;
+    margin-right: 8px;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 36px;
+    border-top-right-radius: 36px;
+    border-bottom-left-radius: 36px;
+    border-bottom-right-radius: 36px;
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    border-left-color: rgba(255, 255, 255, 0.4);
+    border-right-color: rgba(255, 255, 255, 0.4);
+    border-top-color: rgba(255, 255, 255, 0.4);
+    border-bottom-color: rgba(255, 255, 255, 0.4);
+    transition-property: scale, border-left-color, border-right-color, border-top-color, border-bottom-color, border-left-width, border-right-width, border-top-width, border-bottom-width;
+    transition-duration: 0.15s;
+}
+
+.ball-item:hover {
+    scale: 1.08 1.08;
+    border-left-color: rgba(255, 255, 255, 0.8);
+    border-right-color: rgba(255, 255, 255, 0.8);
+    border-top-color: rgba(255, 255, 255, 0.8);
+    border-bottom-color: rgba(255, 255, 255, 0.8);
+}
+
+.ball-item--selected {
+    scale: 1.18 1.18;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    border-left-color: rgb(255, 217, 38);
+    border-right-color: rgb(255, 217, 38);
+    border-top-color: rgb(255, 217, 38);
+    border-bottom-color: rgb(255, 217, 38);
+}
+
+.ball-number {
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    -unity-text-outline-color: rgba(0, 0, 0, 0.85);
+    -unity-text-outline-width: 1.5px;
+}

@@ -5,11 +5,11 @@ using UnityEngine;
 
 namespace Game.Sorcerum
 {
-    public class BallBase : MonoBehaviour, IPoolObject
+    public class BallBase : MonoBehaviour, IPoolObjectController
     {
         [SerializeField] private BallDataSo _ballData;
         
-        private AttributeCollection _attributeCollection;
+        private AttributeCollection _attributeCollection = new();
 
         public void Initialize(IContextProvider contextProvider)
         {
@@ -40,11 +40,15 @@ namespace Game.Sorcerum
 
         public IPool Pool { get; set; }
         public GameObject Go => gameObject;
-        public event Action OnGetFromPool;
-        public event Action OnReturnToPool;
+        
         public T As<T>() where T : class, IPoolObject
         {
             return this as T;
+        }
+
+        public void ReturnToPool()
+        {
+            Pool.Return(this);
         }
     }
 }

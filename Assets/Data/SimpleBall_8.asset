@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82bc7cff34fc4ca6b832bbd366b63a01, type: 3}
+  m_Name: SimpleBall_8
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Sorcerum.BallDataSo
+  _brain: {fileID: 11400000, guid: 35d2dc4b22be42ee829a58f27ea7e089, type: 2}
+  _poolKey:
+    _poolKey: simpleBall

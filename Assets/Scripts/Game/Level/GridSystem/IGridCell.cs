@@ -6,7 +6,8 @@ namespace General.GridSystem
     {
         public int XPos { get; set; }
         public int YPos { get; set; }
-        
+
+        public Vector2Int Position => new Vector2Int(XPos, YPos);
 
         public static bool operator <(IGridCell first, IGridCell second)
         {

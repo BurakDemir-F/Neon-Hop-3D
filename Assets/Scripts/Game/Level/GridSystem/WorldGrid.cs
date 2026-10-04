@@ -11,8 +11,6 @@ namespace Game.Sorcerum
         
         private IGrid<MapGridCell> _grid;
         private GridPositionProvider _positionProvider;
-
-        public Transform GridOrigin => _gridOrigin;
         
         public void Initialize(IReadOnlyList<MapGridCell> cells, IGridData gridData)
         {
@@ -25,6 +23,8 @@ namespace Game.Sorcerum
                 
                 mapGridCell.WorldPos = _positionProvider.GetWorldPosition(new Vector2Int(mapGridCell.XPos,
                     mapGridCell.YPos));
+                
+                mapGridCell.Go.transform.SetParent(_gridOrigin);
             }
         }
 
@@ -48,6 +48,21 @@ namespace Game.Sorcerum
         public MapGridCell GetCell(Vector2Int gridCellPosition)
         {
             return _grid[gridCellPosition.x, gridCellPosition.y];
+        }
+
+        public void ClearWorldGrid()
+        {
+            if(_grid == null)
+                return;
+
+            foreach (var mapGridCell in _grid)
+            {
+                mapGridCell.ClearCell();
+                mapGridCell.ReturnToPool();
+            }
+
+            _grid = null;
+            _positionProvider = null;
         }
     }
 }

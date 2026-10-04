@@ -1,8 +1,9 @@
 namespace Game.Sorcerum
 {
     [System.Serializable]
-    public class JumpAttribute : AttributeBase
+    public class CrackAttribute : WorkerAttribute
     {
+
         public override AttributeWork DoAttributeWork()
         {
             return default;

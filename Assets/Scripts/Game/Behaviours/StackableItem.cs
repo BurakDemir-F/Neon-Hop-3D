@@ -5,11 +5,11 @@ using UnityEngine;
 
 namespace Game.Sorcerum
 {
-    public class StackableItem : MonoBehaviour, IPoolObject
+    public class StackableItem : MonoBehaviour, IPoolObjectController
     {
         [SerializeField] private StackableItemDataSo _itemData;
         
-        private AttributeCollection _attributeCollection;
+        private AttributeCollection _attributeCollection = new();
         public Transform Transform => transform;
 
         public void Initialize(IContextProvider contextProvider)
@@ -44,11 +44,14 @@ namespace Game.Sorcerum
 
         public IPool Pool { get; set; }
         public GameObject Go => gameObject;
-        public event Action OnGetFromPool;
-        public event Action OnReturnToPool;
         public T As<T>() where T : class, IPoolObject
         {
             return this as T;
+        }
+
+        public void ReturnToPool()
+        {
+            Pool.Return(this);
         }
     }
 }

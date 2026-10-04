@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -17,6 +17,15 @@ namespace General
 
             resultObj = default;
             return false;
+        }
+
+        public TypeObjectCollection()
+        {
+        }
+
+        public TypeObjectCollection(IEnumerable<TObject> objectList)
+        {
+            UpdateRange(objectList);
         }
 
         public void UpdateRange(IEnumerable<TObject> objectList)

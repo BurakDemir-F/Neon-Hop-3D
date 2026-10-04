@@ -16,7 +16,7 @@ namespace Game.Pool.AddressablesLocal.Scripts.Runtime
         {
             _poolDict = new Dictionary<string, IPool>();
             foreach (var poolConfig in config)
-                _poolDict.Add(poolConfig.PoolKey, new SinglePoolUnit(poolConfig, this,transform));
+                _poolDict.Add(poolConfig.PoolKey, new SinglePoolUnit(poolConfig,transform));
         }
 
         public IPoolObject Get(string key)
@@ -31,7 +31,10 @@ namespace Game.Pool.AddressablesLocal.Scripts.Runtime
 
         public void Return(IPoolObject poolObj)
         {
-            _poolDict[poolObj.Key].Return(poolObj);
+            if (poolObj is IPoolObjectController controller)
+            {
+                _poolDict[controller.Key].Return(poolObj);
+            }
         }
 
         public void ReturnAll()
@@ -45,11 +48,11 @@ namespace Game.Pool.AddressablesLocal.Scripts.Runtime
             return _poolDict[key];
         }
 
-        public void CheckAndInitialize(Transform transform)
+        public void CheckAndInitialize(Transform root)
         {
             if (_isInitialized) return;
             
-            InitializePool(_config.PoolConfig,transform);
+            InitializePool(_config.PoolConfig,root);
             _isInitialized = true;
         }
 
@@ -59,11 +62,6 @@ namespace Game.Pool.AddressablesLocal.Scripts.Runtime
             {
                 poolUnit.Release();
             }
-        }
-
-        public void RefreshManager()
-        {
-            
         }
     }
 }

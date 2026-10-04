@@ -12,36 +12,54 @@ namespace Game.Sorcerum
         [Header("Test")]
         [SerializeField] private LevelDataSo _testLevel;
 
-        [SerializeField] private MasterPool _masterPool;
+        [SerializeField] private AvailableBallScreen _availableBallScreen;
         
         private IPoolCollection _poolCollection;
-        public void BuildLevel(LevelDataSo levelData)
+        public WorldData BuildLevel(LevelDataSo levelData, IPoolCollection poolCollection)
         {
-            CreateGrid(levelData);
+            if (levelData == null)
+            {
+                Debug.LogWarning($"[{nameof(LevelManager)}] LevelData is null!", this);
+                return null;
+            }
+
+            _poolCollection = poolCollection;
+            
+            if (_availableBallScreen == null)
+            {
+                _availableBallScreen = FindFirstObjectByType<AvailableBallScreen>();
+            }
+
+            ClearLevel();
+
+            var worldData = CreateGrid(levelData);
             CreateStacks(levelData);
             CreateAvailableBallArea(levelData);
+
+            return worldData;
         }
 
-        [ContextMenu("Build Level")]
-        private void BuildLevelTest()
+        public void ClearLevel()
         {
-            _masterPool.CheckAndInitialize(_worldGrid.GridOrigin);
-            _poolCollection = _masterPool;
-            BuildLevel(_testLevel);
-        }
+            _worldGrid.ClearWorldGrid();
 
-        [ContextMenu("Clear text objects")]
-        private void ClearTestObjects()
-        {
-            while (_worldGrid.GridOrigin.childCount > 0)
+            if (_availableBallScreen != null)
             {
-                DestroyImmediate(_worldGrid.GridOrigin.GetChild(0).gameObject);
+                _availableBallScreen.ClearBalls();
             }
         }
 
         private void CreateAvailableBallArea(LevelDataSo levelData)
         {
-            
+            if (_availableBallScreen == null)
+            {
+                _availableBallScreen = FindFirstObjectByType<AvailableBallScreen>();
+            }
+
+            if (_availableBallScreen != null && levelData != null)
+            {
+                _availableBallScreen.ShowAvailableBalls(levelData.LevelDataVo.BallData);
+            }
         }
 
         private void CreateStacks(LevelDataSo levelData)
@@ -66,7 +84,7 @@ namespace Game.Sorcerum
             }
         }
 
-        private void CreateGrid(LevelDataSo levelDataSo)
+        private WorldData CreateGrid(LevelDataSo levelDataSo)
         {
             var gridData = levelDataSo.LevelDataVo.MapGrid;
             var emptyCellKey = levelDataSo.LevelDataVo.EmptyGridCellKey;
@@ -78,7 +96,10 @@ namespace Game.Sorcerum
 
             var gridDataDimensions = gridData.Dimensions;
 
-            var cellList = new List<MapGridCell>();
+            var cellList = new List<MapGridCell>(gridDataDimensions.x * gridDataDimensions.y);
+
+            var stackCellList = new List<StackGridCell>();
+            var emptyCellList = new List<EmptyGridCell>();
             
             for (int x = 0; x < gridDataDimensions.x; x++)
             {
@@ -86,21 +107,36 @@ namespace Game.Sorcerum
                 {
                     if (positionSet.Contains(new Vector2Int(x, y)))
                     {
-                        var stackCell = _poolCollection.Get<MapGridCell>(stackCellKey.PoolKey1);
+                        var stackCell = _poolCollection.Get<StackGridCell>(stackCellKey.PoolKey1);
                         cellList.Add(stackCell);
+                        stackCellList.Add(stackCell);
                     }
                     else
                     {
                         var emptyCell = _poolCollection.Get<EmptyGridCell>(emptyCellKey.PoolKey1);
                         cellList.Add(emptyCell);
+                        emptyCellList.Add(emptyCell);
                     }
                 }
             }
             
-    
             _worldGrid.Initialize(cellList, levelDataSo.LevelDataVo.MapGrid);
             _worldGrid.CalculateWorldPos(0f);
+
+            return new WorldData(stackCellList, emptyCellList);
         }
+    }
+
+    public class WorldData
+    {
+        public WorldData(IReadOnlyList<StackGridCell> stackCellList, IReadOnlyList<EmptyGridCell> emptyCellList)
+        {
+            StackCellList = stackCellList;
+            EmptyCellList = emptyCellList;
+        }
+
+        public IReadOnlyList<StackGridCell> StackCellList { get; }
+        public IReadOnlyList<EmptyGridCell> EmptyCellList { get; }
     }
     
 }

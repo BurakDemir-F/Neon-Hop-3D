@@ -5,34 +5,41 @@ using UnityEngine;
 
 namespace Game.Sorcerum
 {
-    public class MapGridCell : MonoBehaviour, IPoolObject, IGridCell
+    public class MapGridCell : MonoBehaviour, IPoolObjectController, IGridCell
     {
         public Vector3 WorldPos
         {
             get => transform.position;
             set => transform.position = value;
         }
-        
-        public string Key { get; set; }
 
-        public void GetFromPool()
+        public virtual void ClearCell()
+        {
+            
+        }
+        string IPoolObjectSetter.Key { get; set; }
+
+        void IPoolObjectSetter.GetFromPool()
         {
             gameObject.SetActive(true);
         }
 
-        public void ReturnedToPool()
+        void IPoolObjectSetter.ReturnedToPool()
         {
             gameObject.SetActive(false);
         }
 
-        public IPool Pool { get; set; }
+        IPool IPoolObjectSetter.Pool { get; set; }
         public GameObject Go => gameObject;
-        public event Action OnGetFromPool;
-        public event Action OnReturnToPool;
 
         public T As<T>() where T : class, IPoolObject
         {
             return this as T;
+        }
+
+        public void ReturnToPool()
+        {
+            ((IPoolObjectSetter)this).Pool.Return(this);
         }
 
         public int XPos { get; set; }

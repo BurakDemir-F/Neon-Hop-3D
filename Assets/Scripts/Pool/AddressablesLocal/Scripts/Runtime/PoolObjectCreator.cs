@@ -6,10 +6,10 @@ namespace Game.Pool.AddressablesLocal.Scripts.Runtime
 {
     public abstract class PoolObjectCreator : ScriptableObject
     {
-        public virtual IPoolObject CreatePoolBehaviour(PoolConfig config, IPool pool,Transform root)
+        public virtual IPoolObjectController CreatePoolBehaviour(PoolConfig config, IPool pool,Transform root)
         {
             var poolObj = Instantiate(config.PoolObjectPrefab,root);
-            if (poolObj.TryGetComponent<IPoolObject>(out var component))
+            if (poolObj.TryGetComponent<IPoolObjectController>(out var component))
             {
                 component.Pool = pool;
                 component.Key = config.PoolKey;

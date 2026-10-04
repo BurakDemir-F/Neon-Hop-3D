@@ -22,7 +22,7 @@ namespace General.GridSystem
             {
                 for (int j = 0; j < yDimension; j++)
                 {
-                    var cell = cells[GetIndex(_xDimension, i, j)];
+                    var cell = cells[GetIndexYMovementFirst(_yDimension, i, j)];
                     _items[i, j] = cell;
                     cell.XPos = i;
                     cell.YPos = j;
@@ -30,7 +30,12 @@ namespace General.GridSystem
             }
         }
 
-        private int GetIndex(int xDimension, int xPos, int yPos)
+        private int GetIndexYMovementFirst(int yDimension, int xPos, int yPos)
+        {
+            return yDimension * xPos + yPos;
+        }
+
+        private int GetIndexXMovementFirst(int xDimension, int xPos, int yPos)
         {
             return xDimension * yPos + xPos;
         }

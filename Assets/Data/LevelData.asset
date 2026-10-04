@@ -19,8 +19,17 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 4d4afa9e79a429a4c9ffd57b2100833a, type: 2}
       - {fileID: 11400000, guid: 4d4afa9e79a429a4c9ffd57b2100833a, type: 2}
       _itemDistance: 0.5
+    - _gridPos: {x: 1, y: 2}
+      _items:
+      - {fileID: 11400000, guid: 4d4afa9e79a429a4c9ffd57b2100833a, type: 2}
+      - {fileID: 11400000, guid: 4d4afa9e79a429a4c9ffd57b2100833a, type: 2}
+      - {fileID: 11400000, guid: 4d4afa9e79a429a4c9ffd57b2100833a, type: 2}
+      _itemDistance: 0.5
     _ballData:
       _availableBalls:
+      - {fileID: 11400000, guid: 179cec27b7322344c98cce586f032401, type: 2}
+      - {fileID: 11400000, guid: f159a70b6f7e4055b0a68a8064046bb1, type: 2}
+      - {fileID: 11400000, guid: c9e303e0ae404fc2818c10bc3fba8bf4, type: 2}
       - {fileID: 11400000, guid: 179cec27b7322344c98cce586f032401, type: 2}
     _mapGrid:
       _dimensions: {x: 4, y: 4}

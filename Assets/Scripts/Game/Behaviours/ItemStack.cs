@@ -5,13 +5,14 @@ using UnityEngine;
 
 namespace Game.Sorcerum
 {
-    public class ItemStack : MonoBehaviour, IItemStack, IPoolObject
+    public class ItemStack : MonoBehaviour, IItemStack, IPoolObjectController
     {
         private StackableItemStackData _stackableItemStackData;
         [SerializeField] private Transform _stackRoot;
         private List<StackableItem> _itemList = new();
 
         public Transform StackRoot => _stackRoot;
+        public Vector2Int GridPos => _stackableItemStackData.GridPos;
 
         public void Initialize(StackableItemStackData stackableItemStackData)
         {
@@ -28,6 +29,16 @@ namespace Game.Sorcerum
                 0f);
         }
 
+        public void ClearStack()
+        {
+            foreach (var stackableItem in _itemList)
+            {
+                stackableItem.ReturnToPool();
+            }
+            
+            _itemList.Clear();
+        }
+
         public StackableItem RemoveFromStack()
         {
             var index = _itemList.Count - 1;
@@ -38,29 +49,40 @@ namespace Game.Sorcerum
             var item = _itemList[index];
             _itemList.RemoveAt(index);
 
-
             return item;
         }
 
         public bool HasItem() => _itemList.Count > 0;
+        public bool GetTop(out StackableItem stackableItem)
+        {
+            var hasItem = _itemList.Count > 0;
+            
+            stackableItem = hasItem ? _itemList[^1] : null;
+
+            return hasItem;
+        }
+
         public string Key { get; set; }
         public void GetFromPool()
         {
             gameObject.SetActive(true);
         }
 
-        public void ReturnedToPool()
+        void IPoolObjectSetter.ReturnedToPool()
         {
             gameObject.SetActive(false);
         }
 
         public IPool Pool { get; set; }
         public GameObject Go => gameObject;
-        public event Action OnGetFromPool;
-        public event Action OnReturnToPool;
         public T As<T>() where T : class, IPoolObject
         {
             return this as T;
+        }
+
+        public void ReturnToPool()
+        {
+            Pool.Return(this);
         }
     }
 
@@ -69,5 +91,9 @@ namespace Game.Sorcerum
         void AddToStack(StackableItem stackableItem);
         StackableItem RemoveFromStack();
         bool HasItem();
+        bool GetTop(out StackableItem stackableItem);
+        public Transform StackRoot { get; }
+        public void ClearStack();
+        void ReturnToPool();
     }
 }

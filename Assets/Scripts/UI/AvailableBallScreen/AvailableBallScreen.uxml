@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="AvailableBallScreen.uss" />
+    <ui:VisualElement name="available-ball-screen" picking-mode="Ignore" class="screen-root">
+        <ui:VisualElement name="available-balls-tray" class="tray">
+            <ui:Label name="header-label" text="AVAILABLE BALLS" picking-mode="Ignore" class="header-label" />
+            <ui:VisualElement name="available-balls-container" class="balls-container" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

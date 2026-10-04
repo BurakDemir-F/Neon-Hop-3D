@@ -6,26 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="8203772f-3af4-49c8-aa94-5113814ff257" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Hybrid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hybrid/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/LevelData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/LevelData.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/AttributeBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/AttributeBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/CrackAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/CrackAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/JumpAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/JumpAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/AttributeCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/AttributeCollection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/CrackAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/WorkerAttributes/CrackAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/CrackAttribute.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/WorkerAttributes/CrackAttribute.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/JumpAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/WorkerAttributes/JumpAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/JumpAttribute.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/WorkerAttributes/JumpAttribute.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/BallBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/BallBase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/ItemStack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/ItemStack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/StackableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/StackableItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BallDataSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BallDataSo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BrainSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BrainSo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Data/LevelDataSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Data/LevelDataSo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Data/StackableItemDataSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Data/StackableItemDataSo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/IContextProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/IContextProvider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/Grid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/Grid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/IGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/IGrid.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/Neighbor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/Neighbor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/IGridCell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/IGridCell.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/WorldGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/WorldGrid.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Assets/MasterPoolConfig.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Assets/MasterPoolConfig.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Creators/MazeWorldCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Creators/SimpleCreator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Creators/MazeWorldCreator.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Creators/SimpleCreator.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/MapGridCell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/MapGridCell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/StackGridCell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/StackGridCell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/TypeObjectCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/TypeObjectCollection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Creators/SimpleCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Creators/SimpleCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Runtime/IPoolObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Runtime/IPoolObject.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Runtime/MasterPool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Runtime/MasterPool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Runtime/PoolObjectCreator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Runtime/PoolObjectCreator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Runtime/SinglePoolUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Runtime/SinglePoolUnit.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +58,11 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../Terraforming/Terraforming/Assets/Game/Player/AddressablesLocal/Scripts/PlayerWeapon/WeaponData/SpellEffectVo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Art.meta" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/PropertyDrawers/SubclassSelectorDrawer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Attributes/CrackAttribute.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Attributes/JumpAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/BallVisualAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/ToughnessAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Data/BallDataSo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Data/LevelDataSo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Data/PoolKey.cs" root0="FORCE_HIGHLIGHTING" />
@@ -63,12 +72,18 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/MapGridCell.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/StackGridCell.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/StackQueueController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Assets/AddressableObjectPoolCreator.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/AvailableBallScreen/AvailableBallScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/1b6535aa091d41cf8b3ca222ed9ceef0212600/2e/89cb2163/Transform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/1b6535aa091d41cf8b3ca222ed9ceef0212600/da/e28df4fa/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/1b6535aa091d41cf8b3ca222ed9ceef0212600/f8/9001c8b5/Vector3.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/2e4eaf245b924ed1b8c17467295ae042a6ca00/ce/e4e395f0/SerializedProperty.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/3e/77760cf7/ICollection.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/70/31528bc1/IReadOnlyList`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/9a/483f6296/IList.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -83,20 +98,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "main",
-    "junie.onboarding.icon.badge.shown": "true",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.11f1\Editor\Unity.exe" />
@@ -118,15 +133,13 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false" ignored-value-for-modified-check="23364">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="23364" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list>
-          <MonoRuntime />
-        </list>
+        <list />
       </option>
       <option name="selectedOptions">
         <list />
@@ -146,7 +159,10 @@
       <updated>1790710332045</updated>
       <workItem from="1790710333673" duration="9364000" />
       <workItem from="1790880900337" duration="4485000" />
-      <workItem from="1790886296739" duration="4115000" />
+      <workItem from="1790886296739" duration="4210000" />
+      <workItem from="1791044385087" duration="6901000" />
+      <workItem from="1791055592447" duration="2789000" />
+      <workItem from="1791140543277" duration="5005000" />
     </task>
     <task id="LOCAL-00001" summary="working on the game.">
       <option name="closed" value="true" />
@@ -164,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1790789577466</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changes.">
+      <option name="closed" value="true" />
+      <created>1790894721499</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1790894721499</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -222,16 +246,16 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelManager.cs</url>
-          <line>92</line>
-          <properties documentPath="C:\UserData\Projects\hybridCasual\Hybrid\Assets\Scripts\Game\Level\LevelManager.cs" containingFunctionPresentation="Method 'CreateGrid'">
+          <line>66</line>
+          <properties documentPath="C:\UserData\Projects\hybridCasual\Hybrid\Assets\Scripts\Game\Level\LevelManager.cs" containingFunctionPresentation="Method 'CreateStacks'">
             <startOffsets>
-              <option value="3156" />
+              <option value="1921" />
             </startOffsets>
             <endOffsets>
-              <option value="3157" />
+              <option value="1973" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

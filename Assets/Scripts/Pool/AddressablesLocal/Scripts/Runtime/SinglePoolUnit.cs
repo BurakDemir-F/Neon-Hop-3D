@@ -7,24 +7,22 @@ namespace Game.Pool.AddressablesLocal.Scripts.Runtime
 {
     public class SinglePoolUnit : IPool
     {
-        private readonly Stack<IPoolObject> _objectStack;
+        private readonly Stack<IPoolObjectController> _objectStack;
         private readonly PoolConfig _config;
-        private readonly IPoolCollection _rootPoolCollection;
         private readonly Transform _root;
 
-        private HashSet<IPoolObject> _borrowedObjects;
+        private HashSet<IPoolObjectController> _borrowedObjects;
 
-        public SinglePoolUnit(PoolConfig config, IPoolCollection rootPoolCollection, Transform root)
+        public SinglePoolUnit(PoolConfig config, Transform root)
         {
-            _rootPoolCollection = rootPoolCollection;
             _config = config;
             _root = root;
 
-            _borrowedObjects = new HashSet<IPoolObject>();
+            _borrowedObjects = new HashSet<IPoolObjectController>();
 
             var defaultCapacity = config.DefaultCapacity;
 
-            _objectStack = new Stack<IPoolObject>(defaultCapacity);
+            _objectStack = new Stack<IPoolObjectController>(defaultCapacity);
 
             for (int i = 0; i < defaultCapacity; i++)
             {
@@ -51,17 +49,20 @@ namespace Game.Pool.AddressablesLocal.Scripts.Runtime
 
         public void Return(IPoolObject poolObject)
         {
-            if (poolObject.Pool != this)
+            if (poolObject is IPoolObjectController controller)
             {
-                "something wrong here!".Print();
-                return;
-            }
+                if (controller.Pool != this)
+                {
+                    "something wrong here!".Print();
+                    return;
+                }
 
-            _borrowedObjects.Remove(poolObject);
-            
-            poolObject.ReturnedToPool();
-            poolObject.Go.transform.SetParent(_root, false);
-            _objectStack.Push(poolObject);
+                _borrowedObjects.Remove(controller);
+                
+                controller.ReturnedToPool();
+                controller.Go.transform.SetParent(_root, false);
+                _objectStack.Push(controller);
+            }
         }
 
         public void ReturnAll()
@@ -72,7 +73,7 @@ namespace Game.Pool.AddressablesLocal.Scripts.Runtime
                 Return(borrowedObject);
         }
 
-        private IPoolObject CreateNew()
+        private IPoolObjectController CreateNew()
         {
             var newPoolObj = _config.Creator.CreatePoolBehaviour(_config, this, _root);
             newPoolObj.Pool = this;

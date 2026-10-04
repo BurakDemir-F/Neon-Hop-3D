@@ -17,10 +17,19 @@ public abstract class AttributeBase
         
     }
 
-    public abstract AttributeWork DoAttributeWork();
 }
 
 public ref struct AttributeWork
 {
     public bool RequireTween;
+}
+
+public abstract class WorkerAttribute : AttributeBase
+{
+    public abstract AttributeWork DoAttributeWork();
+}
+
+public class DataAttribute : AttributeBase
+{
+    
 }

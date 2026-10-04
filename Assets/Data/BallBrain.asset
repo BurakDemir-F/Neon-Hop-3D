@@ -14,9 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Game.Sorcerum.BrainSo
   _attributeBaseList:
   - rid: 6423604256275955772
+  - rid: 6423604256275955773
   references:
     version: 2
     RefIds:
     - rid: 6423604256275955772
       type: {class: JumpAttribute, ns: Game.Sorcerum, asm: Assembly-CSharp}
       data: 
+    - rid: 6423604256275955773
+      type: {class: ToughnessAttribute, ns: , asm: Assembly-CSharp}
+      data:
+        _hitCount: 5

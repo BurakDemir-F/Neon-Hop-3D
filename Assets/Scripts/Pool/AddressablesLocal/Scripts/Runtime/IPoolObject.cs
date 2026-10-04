@@ -5,13 +5,22 @@ namespace Game.Pool.AddressablesLocal.Scripts.Runtime
 {
     public interface IPoolObject
     {
+        GameObject Go { get; }
+        T As<T>() where T : class,IPoolObject;
+        void ReturnToPool();
+    }
+
+    public interface IPoolObjectSetter
+    {
+        IPool Pool { get; set; }
         string Key { get; set; }
         void GetFromPool();
         void ReturnedToPool();
-        IPool Pool { get; set; }
-        GameObject Go { get; }
-        event Action OnGetFromPool;
-        event Action OnReturnToPool;
-        T As<T>() where T : class,IPoolObject;
     }
+    public interface IPoolObjectController : IPoolObject, IPoolObjectSetter
+    {
+        
+    }
+    
+    
 }

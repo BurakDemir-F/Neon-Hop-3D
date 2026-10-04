@@ -129,7 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6524772}
   - component: {fileID: 6524774}
-  - component: {fileID: 6524773}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -153,20 +152,6 @@ Transform:
   - {fileID: 2049854866}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6524773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6524771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9586c2708a4410295c5ea743f8d2a2b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Game.Pool.AddressablesLocal.Scripts.Runtime.MasterPool
-  _config: {fileID: 11400000, guid: 71b25d93a9353d94b81824248e4fdfb5, type: 2}
-  _isInitialized: 0
 --- !u!114 &6524774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Game.Sorcerum.LevelManager
   _worldGrid: {fileID: 2049854865}
   _testLevel: {fileID: 11400000, guid: 815ed78459c9cf547b12dfc8ef9239a0, type: 2}
-  _masterPool: {fileID: 6524773}
+  _availableBallScreen: {fileID: 1842206404}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -526,6 +511,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2049854866}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1219868426
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1219868428}
+  - component: {fileID: 1219868427}
+  - component: {fileID: 1219868429}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1219868427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219868426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b0c3cde2b6c4205894b96ece8c6d3f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Sorcerum.GameManager
+  _levelManager: {fileID: 6524774}
+  _availableBallScreen: {fileID: 1842206404}
+  _masterPool: {fileID: 5920019792551252767}
+  _stackQueueController: {fileID: 1219868429}
+  _currentLevelData: {fileID: 11400000, guid: 815ed78459c9cf547b12dfc8ef9239a0, type: 2}
+  _autoBuildOnStart: 1
+--- !u!4 &1219868428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219868426}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1219868429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219868426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e593b1d43b3149329da051e90850a644, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Sorcerum.StackQueueController
+--- !u!114 &1842206404 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2391544939511884452, guid: 84ad2ac40ac93b146b477021ccdee9ca, type: 3}
+  m_PrefabInstance: {fileID: 6068767817630834578}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e58ebb65736e44a38dd970e97d16e915, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Sorcerum.AvailableBallScreen
 --- !u!1 &2049854864
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,6 +631,131 @@ Transform:
   - {fileID: 1068935082}
   m_Father: {fileID: 6524772}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5920019792551252766
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2023697628419800937, guid: 4f9d43d523ca3024394c0cdbfcc1203c, type: 3}
+      propertyPath: m_Name
+      value: MasterPool
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209284360837498337, guid: 4f9d43d523ca3024394c0cdbfcc1203c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209284360837498337, guid: 4f9d43d523ca3024394c0cdbfcc1203c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209284360837498337, guid: 4f9d43d523ca3024394c0cdbfcc1203c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209284360837498337, guid: 4f9d43d523ca3024394c0cdbfcc1203c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209284360837498337, guid: 4f9d43d523ca3024394c0cdbfcc1203c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209284360837498337, guid: 4f9d43d523ca3024394c0cdbfcc1203c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209284360837498337, guid: 4f9d43d523ca3024394c0cdbfcc1203c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209284360837498337, guid: 4f9d43d523ca3024394c0cdbfcc1203c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209284360837498337, guid: 4f9d43d523ca3024394c0cdbfcc1203c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8209284360837498337, guid: 4f9d43d523ca3024394c0cdbfcc1203c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f9d43d523ca3024394c0cdbfcc1203c, type: 3}
+--- !u!114 &5920019792551252767 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1996433214649371910, guid: 4f9d43d523ca3024394c0cdbfcc1203c, type: 3}
+  m_PrefabInstance: {fileID: 5920019792551252766}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9586c2708a4410295c5ea743f8d2a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Pool.AddressablesLocal.Scripts.Runtime.MasterPool
+--- !u!1001 &6068767817630834578
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6346936928723387613, guid: 84ad2ac40ac93b146b477021ccdee9ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6346936928723387613, guid: 84ad2ac40ac93b146b477021ccdee9ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6346936928723387613, guid: 84ad2ac40ac93b146b477021ccdee9ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6346936928723387613, guid: 84ad2ac40ac93b146b477021ccdee9ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6346936928723387613, guid: 84ad2ac40ac93b146b477021ccdee9ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6346936928723387613, guid: 84ad2ac40ac93b146b477021ccdee9ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6346936928723387613, guid: 84ad2ac40ac93b146b477021ccdee9ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6346936928723387613, guid: 84ad2ac40ac93b146b477021ccdee9ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6346936928723387613, guid: 84ad2ac40ac93b146b477021ccdee9ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6346936928723387613, guid: 84ad2ac40ac93b146b477021ccdee9ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8686104490136164688, guid: 84ad2ac40ac93b146b477021ccdee9ca, type: 3}
+      propertyPath: m_Name
+      value: AvailableBallScreen
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 84ad2ac40ac93b146b477021ccdee9ca, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -580,3 +764,6 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 6524772}
+  - {fileID: 6068767817630834578}
+  - {fileID: 1219868428}
+  - {fileID: 5920019792551252766}

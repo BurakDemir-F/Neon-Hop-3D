@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="AvailableBallScreen.uss" />
+    <ui:VisualElement name="ball-item-root" class="ball-item">
+        <ui:VisualElement name="ball-icon" style="position: absolute; left: 0; top: 0; right: 0; bottom: 0; border-top-left-radius: 36px; border-top-right-radius: 36px; border-bottom-left-radius: 36px; border-bottom-right-radius: 36px;" />
+        <ui:Label name="ball-number" text="1" picking-mode="Ignore" class="ball-number" />
+    </ui:VisualElement>
+</ui:UXML>
