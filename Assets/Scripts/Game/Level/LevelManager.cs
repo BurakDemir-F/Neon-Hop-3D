@@ -16,6 +16,25 @@ namespace Game.Sorcerum
         [SerializeField] private AvailableBallScreen _availableBallScreen;
         
         private IPoolCollection _poolCollection;
+        private readonly List<ItemStack> _activeStacks = new();
+
+        public IReadOnlyList<ItemStack> ActiveStacks => _activeStacks;
+
+        public bool AreAllStacksCleared()
+        {
+            if (_activeStacks.Count == 0) return false;
+
+            for (int i = 0; i < _activeStacks.Count; i++)
+            {
+                if (_activeStacks[i] != null && _activeStacks[i].HasItem())
+                {
+                    return false;
+                }
+            }
+
+            return true;
+        }
+
         public WorldData BuildLevel(LevelDataSo levelData, IPoolCollection poolCollection, IContextProvider contextProvider)
         {
             if (levelData == null)
@@ -42,6 +61,16 @@ namespace Game.Sorcerum
 
         public void ClearLevel()
         {
+            foreach (var stack in _activeStacks)
+            {
+                if (stack != null)
+                {
+                    stack.ClearStack();
+                    stack.ReturnToPool();
+                }
+            }
+            _activeStacks.Clear();
+
             _worldGrid.ClearWorldGrid();
 
             if (_availableBallScreen != null)
@@ -66,6 +95,7 @@ namespace Game.Sorcerum
         private void CreateStacks(LevelDataSo levelData, IContextProvider contextProvider)
         {
             var stackList = levelData.LevelDataVo.StackDataList;
+            _activeStacks.Clear();
 
             foreach (var stackData in stackList)
             {
@@ -83,6 +113,7 @@ namespace Game.Sorcerum
                 }
                 
                 mapCell.PlaceStackToCell(stack);
+                _activeStacks.Add(stack);
             }
         }
 

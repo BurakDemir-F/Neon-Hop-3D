@@ -125,6 +125,9 @@ namespace Game.Sorcerum
             }
 
             _runningBallsInfo.RemoveBall(ball);
+
+            // Check if all stacks in level are cleared
+            GameManager.Instance?.CheckLevelComplete();
         }
     }
 

@@ -5,32 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8203772f-3af4-49c8-aa94-5113814ff257" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hybrid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hybrid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_3.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_8.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_8.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/LevelData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/LevelData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Data/StackableItemBrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/StackableItemBrain.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/AttributeBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/AttributeBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/AttributeCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/AttributeCollection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/ColorIdAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/ColorIdAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/MovementAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/MovementAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/PoolObjectAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/PoolObjectAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/ToughnessAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/ToughnessAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/WorkerAttributes/CrackAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/WorkerAttributes/CrackAttribute.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/WorkerAttributes/JumpAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/WorkerAttributes/JumpAttribute.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/BallController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/BallBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/BallBase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/ItemStack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/ItemStack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/StackableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/StackableItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Context/GameContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Context/GameContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Context/GameEventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Context/GameEventBus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BallDataSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BallDataSo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BrainSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BrainSo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AvailableBallScreen/AvailableBallScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AvailableBallScreen/AvailableBallScreen.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +36,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../Terraforming/Terraforming/Assets/Game/Player/AddressablesLocal/Scripts/PlayerWeapon/WeaponData/SpellEffectVo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Art.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Data/SimpleStackableItem_Pink.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/PropertyDrawers/SubclassSelectorDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/BallVisualAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/IDAttribute.cs" root0="FORCE_HIGHLIGHTING" />
@@ -171,7 +150,7 @@
       <workItem from="1791055592447" duration="2789000" />
       <workItem from="1791140543277" duration="5686000" />
       <workItem from="1791196961368" duration="632000" />
-      <workItem from="1791236198599" duration="16528000" />
+      <workItem from="1791236198599" duration="17541000" />
     </task>
     <task id="LOCAL-00001" summary="working on the game.">
       <option name="closed" value="true" />
@@ -213,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791320705194</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updates with ai.">
+      <option name="closed" value="true" />
+      <created>1791326170688</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1791326170688</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -239,7 +226,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="working on the game." />
     <MESSAGE value="changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="changes." />
+    <MESSAGE value="updates with ai." />
+    <option name="LAST_COMMIT_MESSAGE" value="updates with ai." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
