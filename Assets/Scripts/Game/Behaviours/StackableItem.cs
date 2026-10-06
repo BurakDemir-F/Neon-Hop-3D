@@ -10,6 +10,9 @@ namespace Game.Sorcerum
         [SerializeField] private StackableItemDataSo _itemData;
         
         private AttributeCollection _attributeCollection = new();
+
+        public AttributeCollection AttributeCollection => _attributeCollection;
+
         public Transform Transform => transform;
 
         public void Initialize(IContextProvider contextProvider)
@@ -37,7 +40,7 @@ namespace Game.Sorcerum
             gameObject.SetActive(true);
         }
 
-        public void ReturnedToPool()
+        void IPoolObjectSetter.ReturnedToPool()
         {
             gameObject.SetActive(false);
         }

@@ -86,10 +86,12 @@ namespace Game.Sorcerum
 
             if (_levelManager != null)
             {
-                var worldData = _levelManager.BuildLevel(_currentLevelData, _masterPool);
+                var contextProvider = new ContextProvider();
+                
+                var worldData = _levelManager.BuildLevel(_currentLevelData, _masterPool, contextProvider);
                 _stackQueueController.Initialize(worldData.StackCellList);
-
-                var contextProvider = new ContextProvider(_stackQueueController.NextPositionProvider);
+                
+                contextProvider.UpdateContext(new GameContext(_stackQueueController.NextPositionProvider,_masterPool));
             }
             else
             {

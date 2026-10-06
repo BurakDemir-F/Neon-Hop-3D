@@ -9,20 +9,20 @@ namespace Game.Sorcerum
     {
         [SerializeField] private Transform _cellOrigin;
 
-        private IItemStack _stack;
+        public IItemStack Stack { get; private set; }
 
         public void PlaceStackToCell(IItemStack stack)
         {
-            _stack = stack;
+            Stack = stack;
             
-            _stack.StackRoot.SetParent(_cellOrigin);
-            _stack.StackRoot.localPosition = Vector3.zero;
+            Stack.StackRoot.SetParent(_cellOrigin);
+            Stack.StackRoot.localPosition = Vector3.zero;
         }
 
         public override void ClearCell()
         {
-            _stack.ClearStack();
-            _stack.ReturnToPool();
+            Stack.ClearStack();
+            Stack.ReturnToPool();
         }
     }
 }

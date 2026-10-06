@@ -41,6 +41,11 @@ namespace General
             _typeObjectDict[obj.GetType()] = obj;
         }
 
+        public void UpdateObject<T>(T obj) where T : TObject
+        {
+            _typeObjectDict[typeof(T)] = obj;
+        }
+
         public void Clear()
         {
             _typeObjectDict.Clear();

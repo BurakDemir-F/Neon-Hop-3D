@@ -1,3 +1,4 @@
+using System;
 using Game.Sorcerum;
 
 namespace General
@@ -5,10 +6,16 @@ namespace General
     public class ContextProvider : IContextProvider
     {
         private TypeObjectCollection<IContext> _contextCollection = new();
-        public ContextProvider(INextPositionProvider nextPositionProvider)
+        public ContextProvider()
         {
-            _contextCollection.UpdateObject(new GameContext(nextPositionProvider));
+            _contextCollection.UpdateObject<GameEventBus>(new GameEventBus());
         }
+
+        public void UpdateContext<T>(T context) where T : IContext
+        {
+            _contextCollection.UpdateObject<T>(context);
+        }
+        
         public bool TryGetContext<T>(out T context) where T : IContext
         {
             return _contextCollection.TryGetObject(out context);
@@ -23,15 +30,5 @@ namespace General
     public interface IContext
     {
         
-    }
-
-    public class GameContext : IContext
-    {
-        public GameContext(INextPositionProvider nextPositionProvider)
-        {
-            NextPositionProvider = nextPositionProvider;
-        }
-
-        public INextPositionProvider NextPositionProvider { get; }
     }
 }

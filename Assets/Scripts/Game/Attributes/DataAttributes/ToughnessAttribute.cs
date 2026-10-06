@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 [System.Serializable]
@@ -8,3 +7,4 @@ public class ToughnessAttribute : DataAttribute
 
     public int HitCount => _hitCount;
 }
+

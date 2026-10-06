@@ -1,3 +1,5 @@
+using System.Collections;
+using Game.Sorcerum;
 using General;
 using UnityEngine;
 
@@ -19,17 +21,22 @@ public abstract class AttributeBase
 
 }
 
-public ref struct AttributeWork
+public class WorkChecker
 {
-    public bool RequireTween;
+    public bool ShouldWork { get; } = true;
 }
 
-public abstract class WorkerAttribute : AttributeBase
+public abstract class WorkerAttribute<T> : AttributeBase
 {
-    public abstract AttributeWork DoAttributeWork();
+    public abstract IEnumerator DoAttributeWork(T owner, WorkChecker workChecker);
 }
 
 public class DataAttribute : AttributeBase
+{
+    
+}
+
+public class RuntimeAttribute
 {
     
 }

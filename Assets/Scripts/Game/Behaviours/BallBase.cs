@@ -10,6 +10,9 @@ namespace Game.Sorcerum
         [SerializeField] private BallDataSo _ballData;
         
         private AttributeCollection _attributeCollection = new();
+        public AttributeCollection AttributeCollection => _attributeCollection;
+        
+        public int RemainingJump { get; set; }
 
         public void Initialize(IContextProvider contextProvider)
         {
@@ -20,9 +23,14 @@ namespace Game.Sorcerum
             
             foreach (var attributeBase in _attributeCollection)
                 attributeBase.Initialize(contextProvider);
+            
+            if (_attributeCollection.TryGetAttribute<ToughnessAttribute>(out var toughnessAttribute))
+            {
+                RemainingJump = toughnessAttribute.HitCount;
+            }
         }
         
-        public void Jump(ItemStack from, ItemStack to)
+        public void Jump()
         {
             var hasJumper = _attributeCollection.TryGetObject<JumpAttribute>(out var jumperAttribute);
         }
@@ -33,7 +41,7 @@ namespace Game.Sorcerum
             gameObject.SetActive(true);
         }
 
-        public void ReturnedToPool()
+        void IPoolObjectSetter.ReturnedToPool()
         {
             gameObject.SetActive(false);
         }

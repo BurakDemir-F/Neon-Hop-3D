@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Game.Pool.AddressablesLocal.Scripts.Runtime;
+using General;
 using UnityEngine;
 
 namespace Game.Sorcerum
@@ -15,7 +16,7 @@ namespace Game.Sorcerum
         [SerializeField] private AvailableBallScreen _availableBallScreen;
         
         private IPoolCollection _poolCollection;
-        public WorldData BuildLevel(LevelDataSo levelData, IPoolCollection poolCollection)
+        public WorldData BuildLevel(LevelDataSo levelData, IPoolCollection poolCollection, IContextProvider contextProvider)
         {
             if (levelData == null)
             {
@@ -33,7 +34,7 @@ namespace Game.Sorcerum
             ClearLevel();
 
             var worldData = CreateGrid(levelData);
-            CreateStacks(levelData);
+            CreateStacks(levelData, contextProvider);
             CreateAvailableBallArea(levelData);
 
             return worldData;
@@ -62,7 +63,7 @@ namespace Game.Sorcerum
             }
         }
 
-        private void CreateStacks(LevelDataSo levelData)
+        private void CreateStacks(LevelDataSo levelData, IContextProvider contextProvider)
         {
             var stackList = levelData.LevelDataVo.StackDataList;
 
@@ -77,6 +78,7 @@ namespace Game.Sorcerum
                 foreach (var stackableItemData in stackData.Items)
                 {
                     var item = _poolCollection.Get<StackableItem>(stackableItemData.PoolKey.PoolKey1);
+                    item.Initialize(contextProvider);
                     stack.AddToStack(item);
                 }
                 
