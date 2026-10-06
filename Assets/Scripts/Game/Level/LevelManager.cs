@@ -78,7 +78,7 @@ namespace Game.Sorcerum
                 foreach (var stackableItemData in stackData.Items)
                 {
                     var item = _poolCollection.Get<StackableItem>(stackableItemData.PoolKey.PoolKey1);
-                    item.Initialize(contextProvider);
+                    item.Initialize(stackableItemData, contextProvider);
                     stack.AddToStack(item);
                 }
                 

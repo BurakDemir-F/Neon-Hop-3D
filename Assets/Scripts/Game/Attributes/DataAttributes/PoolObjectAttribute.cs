@@ -2,6 +2,7 @@ using UnityEngine;
 
 namespace Game.Sorcerum
 {
+    [System.Serializable]
     public class PoolObjectAttribute : DataAttribute
     {
         [SerializeField] private PoolKey _poolKey;

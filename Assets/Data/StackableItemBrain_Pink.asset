@@ -10,19 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ebf1d917dbcd4d439f6b90d7a77b1d4d, type: 3}
-  m_Name: StackableItemBrain
+  m_Name: StackableItemBrain_Pink
   m_EditorClassIdentifier: Assembly-CSharp::Game.Sorcerum.BrainSo
   _attributeBaseList:
-  - rid: 6423604256275955771
-  - rid: 6423604256275955770
+  - rid: 6423604256275955760
+  - rid: 6423604256275955761
   references:
     version: 2
     RefIds:
-    - rid: 6423604256275955771
+    - rid: 6423604256275955760
       type: {class: CrackAttribute, ns: Game.Sorcerum, asm: Assembly-CSharp}
       data: 
-    - rid: 6423604256275955770
+    - rid: 6423604256275955761
       type: {class: ColorIdAttribute, ns: Game.Sorcerum, asm: Assembly-CSharp}
       data:
         AlwaysAccept: -999
-        _color: {r: 0, g: 0.8509804, b: 1, a: 1}
+        _color: {r: 1, g: 0.2, b: 0.6, a: 1}

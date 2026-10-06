@@ -15,6 +15,9 @@ MonoBehaviour:
   _attributeBaseList:
   - rid: 6423604256275955790
   - rid: 6423604256275955791
+  - rid: 6423604256275955792
+  - rid: 6423604256275955793
+  - rid: 6423604256275955794
   references:
     version: 2
     RefIds:
@@ -25,3 +28,18 @@ MonoBehaviour:
       type: {class: ToughnessAttribute, ns: , asm: Assembly-CSharp}
       data:
         _hitCount: 8
+    - rid: 6423604256275955792
+      type: {class: ColorIdAttribute, ns: Game.Sorcerum, asm: Assembly-CSharp}
+      data:
+        AlwaysAccept: -999
+        _color: {r: 0, g: 0.8509804, b: 1, a: 1}
+    - rid: 6423604256275955793
+      type: {class: MovementAttribute, ns: , asm: Assembly-CSharp}
+      data:
+        _moveDuration: 0.35
+        _ease: 6
+    - rid: 6423604256275955794
+      type: {class: PoolObjectAttribute, ns: Game.Sorcerum, asm: Assembly-CSharp}
+      data:
+        _poolKey:
+          _poolKey: simpleBall

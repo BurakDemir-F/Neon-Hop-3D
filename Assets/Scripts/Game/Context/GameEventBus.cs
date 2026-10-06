@@ -10,5 +10,10 @@ namespace General
     public readonly struct BallSelectedEvent
     {
         public IAttributeProvider AttributeProvider { get; }
+
+        public BallSelectedEvent(IAttributeProvider attributeProvider)
+        {
+            AttributeProvider = attributeProvider;
+        }
     }
 }

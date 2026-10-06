@@ -522,6 +522,7 @@ GameObject:
   - component: {fileID: 1219868428}
   - component: {fileID: 1219868427}
   - component: {fileID: 1219868429}
+  - component: {fileID: 1219868430}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -545,6 +546,7 @@ MonoBehaviour:
   _availableBallScreen: {fileID: 1842206404}
   _masterPool: {fileID: 5920019792551252767}
   _stackQueueController: {fileID: 1219868429}
+  _ballController: {fileID: 1219868430}
   _currentLevelData: {fileID: 11400000, guid: 815ed78459c9cf547b12dfc8ef9239a0, type: 2}
   _autoBuildOnStart: 1
 --- !u!4 &1219868428
@@ -574,6 +576,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e593b1d43b3149329da051e90850a644, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Sorcerum.StackQueueController
+--- !u!114 &1219868430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1219868426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a4deb3891c41388e8cab26eb1e3079, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Game.Sorcerum.BallController
 --- !u!114 &1842206404 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2391544939511884452, guid: 84ad2ac40ac93b146b477021ccdee9ca, type: 3}

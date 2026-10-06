@@ -12,6 +12,7 @@ namespace Game.Sorcerum
         }
 
         public int GetId() => ColorIntConverter.ColorToInt(_color);
+        public Color Color => _color;
     }
 
     public static class ColorIntConverter

@@ -391,6 +391,10 @@ namespace Game.Sorcerum
                 iconElement.style.backgroundImage = new StyleBackground(visualSprite);
                 iconElement.style.backgroundColor = Color.clear;
             }
+            else if (attributeProvider.TryGetAttribute<ColorIdAttribute>(out var colorIdAttr))
+            {
+                iconElement.style.backgroundColor = ColorIntConverter.IntToColor(colorIdAttr.GetId());
+            }
             else
             {
                 iconElement.style.backgroundColor = GetFallbackBallColor(index);

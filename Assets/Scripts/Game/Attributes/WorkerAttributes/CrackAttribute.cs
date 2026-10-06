@@ -1,4 +1,6 @@
 using System.Collections;
+using DG.Tweening;
+using UnityEngine;
 
 namespace Game.Sorcerum
 {
@@ -7,7 +9,10 @@ namespace Game.Sorcerum
     {
         public override IEnumerator DoAttributeWork(StackableItem owner, WorkChecker workChecker)
         {
-            throw new System.NotImplementedException();
+            if (owner != null)
+            {
+                yield return DG.Tweening.ShortcutExtensions.DOScale(owner.transform, UnityEngine.Vector3.zero, 0.15f).WaitForCompletion();
+            }
         }
     }
 }

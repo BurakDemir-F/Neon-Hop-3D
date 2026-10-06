@@ -22,6 +22,7 @@ namespace Game.Sorcerum
         public void AddToStack(StackableItem stackableItem)
         {
             _itemList.Add(stackableItem);
+            stackableItem.CurrentStack = this;
             stackableItem.Transform.SetParent(_stackRoot);
 
             stackableItem.transform.localPosition = new Vector3(0f,
@@ -33,6 +34,7 @@ namespace Game.Sorcerum
         {
             foreach (var stackableItem in _itemList)
             {
+                stackableItem.CurrentStack = null;
                 stackableItem.ReturnToPool();
             }
             
@@ -48,6 +50,7 @@ namespace Game.Sorcerum
 
             var item = _itemList[index];
             _itemList.RemoveAt(index);
+            item.CurrentStack = null;
 
             return item;
         }

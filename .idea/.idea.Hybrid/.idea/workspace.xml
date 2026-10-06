@@ -5,20 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8203772f-3af4-49c8-aa94-5113814ff257" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Context/IContextProvider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Hybrid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hybrid/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_8.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_8.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/LevelData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/LevelData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/StackableItemBrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/StackableItemBrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/AttributeBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/AttributeBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/AttributeCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/AttributeCollection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/ColorIdAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/ColorIdAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/MovementAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/MovementAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/PoolObjectAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/PoolObjectAttribute.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/ToughnessAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/ToughnessAttribute.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/WorkerAttributes/CrackAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/WorkerAttributes/CrackAttribute.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/WorkerAttributes/JumpAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/WorkerAttributes/JumpAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/BallController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/BallBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/BallBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/ItemStack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/ItemStack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/StackableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/StackableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Context/GameContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Context/GameContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Context/GameEventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Context/GameEventBus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BallDataSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BallDataSo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BrainSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Data/BrainSo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/IContextProvider.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/IContextProvider.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Context/IContextProvider.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/StackGridCell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/StackGridCell.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/TypeObjectCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/TypeObjectCollection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AvailableBallScreen/AvailableBallScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AvailableBallScreen/AvailableBallScreen.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +86,7 @@
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/3e/77760cf7/ICollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/70/31528bc1/IReadOnlyList`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/9a/483f6296/IList.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/aa7eb8f89f914134b4ea7013d80a81c325b600/03/ffdd4c29/EventCallbackFunctor`1.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/3ea01e77be99618395f448b16bd7cc2bd4248bd9e5d8474964b2d97f39c5d74/System.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/d44b17e136d09081da1e8fd0e8c83fde60e11818b9f2442d7ed8cb733fae895e/System.Collections.Generic.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -125,13 +138,15 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false" ignored-value-for-modified-check="25696">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="25696" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -156,7 +171,7 @@
       <workItem from="1791055592447" duration="2789000" />
       <workItem from="1791140543277" duration="5686000" />
       <workItem from="1791196961368" duration="632000" />
-      <workItem from="1791236198599" duration="11954000" />
+      <workItem from="1791236198599" duration="16528000" />
     </task>
     <task id="LOCAL-00001" summary="working on the game.">
       <option name="closed" value="true" />
@@ -190,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791145660842</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changes.">
+      <option name="closed" value="true" />
+      <created>1791320705194</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1791320705194</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -214,9 +237,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="changes." />
     <MESSAGE value="working on the game." />
-    <option name="LAST_COMMIT_MESSAGE" value="working on the game." />
+    <MESSAGE value="changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="changes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -233,19 +256,6 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Scripts/Editor/PropertyDrawers/SubclassSelectorDrawer.cs</url>
-          <line>20</line>
-          <properties documentPath="C:\UserData\Projects\hybridCasual\Hybrid\Assets\Scripts\Editor\PropertyDrawers\SubclassSelectorDrawer.cs" containingFunctionPresentation="Method 'CreatePropertyGUI'">
-            <startOffsets>
-              <option value="655" />
-            </startOffsets>
-            <endOffsets>
-              <option value="686" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Game.Sorcerum
@@ -20,6 +21,11 @@ namespace Game.Sorcerum
             }
             attribute = null;
             return false;
+        }
+
+        public IEnumerable<AttributeBase> GetAttributes()
+        {
+            return _brain.AttributeProvider.GetAttributes();
         }
 
         public T GetAttribute<T>() where T : AttributeBase

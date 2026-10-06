@@ -26,11 +26,13 @@ public class WorkChecker
     public bool ShouldWork { get; } = true;
 }
 
+[System.Serializable]
 public abstract class WorkerAttribute<T> : AttributeBase
 {
     public abstract IEnumerator DoAttributeWork(T owner, WorkChecker workChecker);
 }
 
+[System.Serializable]
 public class DataAttribute : AttributeBase
 {
     

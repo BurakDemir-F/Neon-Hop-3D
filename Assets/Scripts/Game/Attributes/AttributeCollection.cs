@@ -17,10 +17,16 @@ namespace Game.Sorcerum
         {
             return TryGetObject<T>(out attribute);
         }
+
+        public IEnumerable<AttributeBase> GetAttributes()
+        {
+            return this;
+        }
     }
 
     public interface IAttributeProvider
     {
         bool TryGetAttribute<T>(out T attribute) where T : AttributeBase;
+        IEnumerable<AttributeBase> GetAttributes();
     }
 }

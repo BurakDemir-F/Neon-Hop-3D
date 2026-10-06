@@ -19,11 +19,13 @@ namespace Game.Sorcerum
         [SerializeField] private AvailableBallScreen _availableBallScreen;
         [SerializeField] private MasterPool _masterPool;
         [SerializeField] private StackQueueController _stackQueueController;
+        [SerializeField] private BallController _ballController;
 
         [Header("Level Data")]
         [SerializeField] private LevelDataSo _currentLevelData;
         [SerializeField] private bool _autoBuildOnStart = true;
         
+        private ContextProvider _contextProvider;
 
         // Events
         public event Action<LevelDataSo> OnLevelStarted;
@@ -65,8 +67,20 @@ namespace Game.Sorcerum
                     _availableBallScreen = screenGo.AddComponent<AvailableBallScreen>();
                 }
             }
+
+            if (_ballController == null)
+            {
+                _ballController = FindFirstObjectByType<BallController>();
+                if (_ballController == null)
+                {
+                    _ballController = gameObject.AddComponent<BallController>();
+                }
+            }
             
-            _masterPool.CheckAndInitialize(_masterPool.transform);
+            if (_masterPool != null)
+            {
+                _masterPool.CheckAndInitialize(_masterPool.transform);
+            }
         }
 
         /// <summary>
@@ -86,12 +100,24 @@ namespace Game.Sorcerum
 
             if (_levelManager != null)
             {
-                var contextProvider = new ContextProvider();
+                _contextProvider = new ContextProvider();
+                _contextProvider.UpdateContext(new GameEventBus());
                 
-                var worldData = _levelManager.BuildLevel(_currentLevelData, _masterPool, contextProvider);
-                _stackQueueController.Initialize(worldData.StackCellList);
+                var worldData = _levelManager.BuildLevel(_currentLevelData, _masterPool, _contextProvider);
+                if (worldData != null && _stackQueueController != null)
+                {
+                    _stackQueueController.Initialize(worldData.StackCellList);
+                }
                 
-                contextProvider.UpdateContext(new GameContext(_stackQueueController.NextPositionProvider,_masterPool));
+                _contextProvider.UpdateContext(new GameContext(_stackQueueController?.NextPositionProvider, _masterPool, _availableBallScreen));
+                _contextProvider.UpdateContext(new GameDataContext());
+
+                if (_ballController != null)
+                {
+                    _ballController.Destruct();
+                    _ballController.Initialize(_contextProvider);
+                    _ballController.Construct();
+                }
             }
             else
             {
@@ -123,6 +149,11 @@ namespace Game.Sorcerum
 
         private void HandleBallSelected(IAttributeProvider ballProvider, int index)
         {
+            if (_ballController != null && _ballController.HasRunningBalls)
+            {
+                Debug.LogWarning($"[{nameof(GameManager)}] A ball is already jumping! Ignoring selection until it completes.");
+                return;
+            }
             int hitCount = 1;
             if (ballProvider.TryGetAttribute<ToughnessAttribute>(out var toughness))
             {
@@ -130,6 +161,19 @@ namespace Game.Sorcerum
             }
 
             Debug.Log($"[{nameof(GameManager)}] Ball #{index} selected! (HitCount: {hitCount})");
+
+            // Consume/remove the ball from AvailableBallScreen UI
+            if (_availableBallScreen != null)
+            {
+                _availableBallScreen.ConsumeSelectedBall();
+            }
+
+            // Publish event to EventBus for BallController to spawn and launch the ball
+            if (_contextProvider != null && _contextProvider.TryGetContext<GameEventBus>(out var eventBus))
+            {
+                eventBus.Publish(new BallSelectedEvent(ballProvider));
+            }
+
             OnBallSelected?.Invoke(ballProvider, index);
         }
 

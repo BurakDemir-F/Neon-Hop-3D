@@ -18,6 +18,11 @@ namespace Game.Sorcerum
             return AttributeProvider.TryGetAttribute(out attribute);
         }
 
+        public IEnumerable<AttributeBase> GetAttributes()
+        {
+            return _provider.GetAttributes();
+        }
+
         public T GetAttribute<T>() where T : AttributeBase
         {
             TryGetAttribute<T>(out var attribute);
