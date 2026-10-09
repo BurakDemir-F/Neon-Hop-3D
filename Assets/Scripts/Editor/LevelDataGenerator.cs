@@ -76,17 +76,18 @@ namespace Game.Sorcerum.LevelEditor
                             new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan }),
                             new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discPink })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Cyan_2"], balls["Pink_3"], balls["Cyan_2"], balls["Pink_2"] };
+                        availableBalls = new List<BallDataSo> { balls["Cyan_2"], balls["Pink_2"] };
                         break;
 
                     case 2:
                         dimensions = new Vector2Int(3, 3);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan, discCyan }),
-                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discPink, discPink })
+                            new(new Vector2Int(1, 0), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discCyan })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Cyan_3"], balls["Pink_4"], balls["Cyan_2"], balls["Pink_3"], balls["Cyan_2"] };
+                        availableBalls = new List<BallDataSo> { balls["Cyan_3"], balls["Pink_2"] };
                         break;
 
                     case 3:
@@ -94,216 +95,299 @@ namespace Game.Sorcerum.LevelEditor
                         stacks = new List<StackableItemStackData>
                         {
                             new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPink, discCyan }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discPink }),
                             new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discCyan, discPink })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Cyan_4"], balls["Pink_4"], balls["Cyan_3"], balls["Pink_3"], balls["Cyan_2"] };
+                        availableBalls = new List<BallDataSo> { balls["Cyan_2"], balls["Pink_4"], balls["Cyan_4"] };
                         break;
 
                     case 4:
                         dimensions = new Vector2Int(4, 4);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan, discPink, discCyan }),
-                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discPink, discCyan, discPink }),
-                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discCyan, discPink })
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discPink, discCyan }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discCyan, discPink }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discCyan })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Cyan_4"], balls["Pink_5"], balls["Cyan_5"], balls["Pink_4"], balls["Cyan_3"], balls["Pink_3"] };
+                        availableBalls = new List<BallDataSo> { balls["Cyan_2"], balls["Pink_4"], balls["Cyan_5"] };
                         break;
 
                     case 5:
                         dimensions = new Vector2Int(4, 4);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPink, discPink, discCyan }),
-                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discCyan, discCyan, discPink }),
-                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discCyan, discPink, discCyan })
+                            new(new Vector2Int(1, 0), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan, discPink }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(2, 0), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discPink, discCyan }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discCyan })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Cyan_5"], balls["Pink_5"], balls["Cyan_4"], balls["Pink_4"], balls["Cyan_4"], balls["Pink_3"], balls["Cyan_3"] };
+                        availableBalls = new List<BallDataSo> { balls["Pink_3"], balls["Cyan_6"], balls["Pink_5"] };
                         break;
 
                     case 6:
                         dimensions = new Vector2Int(4, 4);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan, discCyan, discPink }),
-                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discPink, discPink, discCyan }),
-                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discCyan, discPink, discCyan })
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPink, discCyan }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discCyan, discPink }),
+                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discCyan, discPink }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discPink, discCyan }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discCyan })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Pink_5"], balls["Cyan_5"], balls["Pink_4"], balls["Cyan_4"], balls["Pink_4"], balls["Cyan_3"], balls["Pink_3"] };
+                        availableBalls = new List<BallDataSo> { balls["Pink_3"], balls["Cyan_4"], balls["Pink_5"], balls["Cyan_6"] };
                         break;
 
                     case 7:
                         dimensions = new Vector2Int(4, 4);
                         stacks = new List<StackableItemStackData>
                         {
+                            new(new Vector2Int(0, 1), new List<StackableItemDataSo> { discCyan }),
                             new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPink, discCyan }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discCyan }),
                             new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discCyan, discPink }),
-                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discPink, discCyan }),
-                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discCyan, discPink })
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discCyan })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Cyan_6"], balls["Pink_6"], balls["Cyan_5"], balls["Pink_5"], balls["Cyan_4"], balls["Pink_4"], balls["Cyan_3"] };
+                        availableBalls = new List<BallDataSo> { balls["Cyan_3"], balls["Pink_5"], balls["Cyan_5"], balls["Pink_6"] };
                         break;
 
                     case 8:
                         dimensions = new Vector2Int(4, 4);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan, discYellow }),
-                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discPink, discYellow }),
-                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discYellow, discCyan })
+                            new(new Vector2Int(1, 0), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPink, discYellow }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(2, 0), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discCyan, discPink }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discCyan })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Yellow_5"], balls["Cyan_4"], balls["Pink_4"], balls["Yellow_4"], balls["Cyan_3"], balls["Pink_3"], balls["Yellow_3"] };
+                        availableBalls = new List<BallDataSo> { balls["Yellow_2"], balls["Pink_5"], balls["Cyan_5"], balls["Yellow_6"] };
                         break;
 
                     case 9:
                         dimensions = new Vector2Int(4, 4);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPink, discCyan, discYellow }),
-                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discYellow, discPink, discCyan }),
-                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discCyan, discYellow, discPink })
+                            new(new Vector2Int(0, 1), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan, discYellow }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discPink, discCyan }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discYellow, discPink }),
+                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discPink })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Yellow_5"], balls["Cyan_5"], balls["Pink_5"], balls["Yellow_4"], balls["Cyan_4"], balls["Pink_4"], balls["Yellow_3"] };
+                        availableBalls = new List<BallDataSo> { balls["Yellow_2"], balls["Cyan_5"], balls["Pink_5"], balls["Yellow_6"], balls["Pink_8"] };
                         break;
 
                     case 10:
                         dimensions = new Vector2Int(4, 4);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discYellow, discCyan, discPink }),
-                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discCyan, discYellow, discPink }),
-                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discPink, discCyan, discYellow }),
-                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discYellow, discPink, discCyan })
+                            new(new Vector2Int(1, 0), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan, discPink }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(2, 0), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discPink, discYellow }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discPink })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Pink_6"], balls["Cyan_6"], balls["Yellow_6"], balls["Pink_5"], balls["Cyan_5"], balls["Yellow_5"], balls["Pink_4"], balls["Cyan_4"] };
+                        availableBalls = new List<BallDataSo> { balls["Pink_2"], balls["Yellow_3"], balls["Cyan_4"], balls["Pink_6"], balls["Yellow_8"] };
                         break;
 
                     case 11:
                         dimensions = new Vector2Int(5, 5);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan, discYellow, discPink, discYellow }),
-                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discYellow, discPink, discCyan, discPink }),
-                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discPink, discCyan, discYellow, discCyan })
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan, discYellow }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discYellow, discPink }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discPink, discCyan }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discYellow, discCyan }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discPink, discYellow })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Yellow_6"], balls["Pink_6"], balls["Cyan_6"], balls["Yellow_5"], balls["Pink_5"], balls["Cyan_5"], balls["Yellow_4"], balls["Pink_4"] };
+                        availableBalls = new List<BallDataSo> { balls["Yellow_2"], balls["Pink_3"], balls["Cyan_5"], balls["Yellow_6"], balls["Pink_8"] };
                         break;
 
                     case 12:
                         dimensions = new Vector2Int(5, 5);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discCyan, discPink, discYellow, discCyan }),
-                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discPink, discYellow, discCyan, discPink }),
-                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discYellow, discCyan, discPink, discYellow }),
-                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discPink, discCyan, discYellow, discPink })
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discPink, discCyan }),
+                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discYellow, discPink }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discCyan, discYellow }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discCyan, discPink }),
+                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discCyan })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Cyan_6"], balls["Pink_6"], balls["Yellow_6"], balls["Cyan_5"], balls["Pink_5"], balls["Yellow_5"], balls["Cyan_4"], balls["Pink_4"], balls["Yellow_4"] };
+                        availableBalls = new List<BallDataSo> { balls["Cyan_3"], balls["Pink_4"], balls["Yellow_5"], balls["Pink_6"], balls["Cyan_8"] };
                         break;
 
                     case 13:
                         dimensions = new Vector2Int(5, 5);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPurple, discCyan, discYellow }),
-                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discYellow, discPurple, discPink }),
-                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discPink, discYellow, discPurple }),
-                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discCyan, discPink, discPurple })
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPurple }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discCyan, discPurple }),
+                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discPink, discYellow }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discPurple, discPink }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discYellow, discCyan }),
+                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discPurple }),
+                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discPink })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Purple_6"], balls["Yellow_6"], balls["Pink_5"], balls["Cyan_5"], balls["Purple_5"], balls["Yellow_4"], balls["Pink_4"], balls["Cyan_4"], balls["Purple_3"] };
+                        availableBalls = new List<BallDataSo> { balls["Purple_2"], balls["Yellow_4"], balls["Pink_5"], balls["Cyan_6"], balls["Purple_8"] };
                         break;
 
                     case 14:
                         dimensions = new Vector2Int(5, 5);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan, discPurple, discPink, discYellow }),
-                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discPink, discYellow, discCyan, discPurple }),
-                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discPurple, discCyan, discYellow, discPink }),
-                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discYellow, discPink, discPurple, discCyan })
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discPurple, discCyan }),
+                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(2, 0), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discYellow, discPink }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discCyan, discPurple }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discPurple, discYellow }),
+                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discPurple })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Yellow_6"], balls["Purple_6"], balls["Pink_6"], balls["Cyan_6"], balls["Yellow_5"], balls["Purple_5"], balls["Pink_5"], balls["Cyan_5"], balls["Yellow_4"], balls["Purple_4"] };
+                        availableBalls = new List<BallDataSo> { balls["Cyan_3"], balls["Pink_4"], balls["Yellow_5"], balls["Purple_6"], balls["Cyan_6"], balls["Pink_8"] };
                         break;
 
                     case 15:
                         dimensions = new Vector2Int(5, 5);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPurple, discPink, discCyan }),
-                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discYellow, discCyan, discPurple }),
-                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discPink, discPurple, discYellow }),
-                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discCyan, discYellow, discPink }),
-                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discYellow, discPink, discPurple })
+                            new(new Vector2Int(1, 0), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPink, discYellow }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discPurple, discCyan }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discPurple, discYellow }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discCyan, discPink }),
+                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discPurple }),
+                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discYellow })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Cyan_6"], balls["Purple_6"], balls["Yellow_6"], balls["Pink_6"], balls["Cyan_5"], balls["Purple_5"], balls["Yellow_5"], balls["Pink_5"], balls["Cyan_4"], balls["Pink_4"] };
+                        availableBalls = new List<BallDataSo> { balls["Yellow_2"], balls["Cyan_4"], balls["Pink_5"], balls["Purple_6"], balls["Yellow_6"], balls["Purple_8"] };
                         break;
 
                     case 16:
                         dimensions = new Vector2Int(5, 5);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPink, discPurple, discCyan, discYellow }),
-                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discYellow, discCyan, discPurple, discPink }),
-                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discCyan, discPink, discYellow, discPurple }),
-                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discPurple, discYellow, discPink, discCyan }),
-                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discPink, discCyan, discPurple, discYellow })
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discPurple, discCyan }),
+                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(2, 0), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discYellow, discPink }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discPurple, discYellow }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(2, 4), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discPurple }),
+                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discCyan, discPurple }),
+                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discYellow })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Yellow_6"], balls["Cyan_6"], balls["Purple_6"], balls["Pink_6"], balls["Yellow_6"], balls["Cyan_5"], balls["Purple_5"], balls["Pink_5"], balls["Yellow_5"], balls["Cyan_4"], balls["Pink_4"] };
+                        availableBalls = new List<BallDataSo> { balls["Cyan_3"], balls["Pink_4"], balls["Yellow_5"], balls["Purple_6"], balls["Cyan_8"], balls["Yellow_8"] };
                         break;
 
                     case 17:
                         dimensions = new Vector2Int(5, 5);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan, discYellow, discPurple, discPink }),
-                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discPurple, discPink, discYellow, discCyan }),
-                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discYellow, discCyan, discPink, discPurple }),
-                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discPink, discPurple, discCyan, discYellow }),
-                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discCyan, discPink, discPurple, discYellow })
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPurple }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discYellow, discPurple }),
+                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discCyan, discPink }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discPurple, discCyan }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(3, 0), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discPink, discYellow }),
+                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discPurple }),
+                            new(new Vector2Int(3, 4), new List<StackableItemDataSo> { discPink })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Pink_8"], balls["Yellow_6"], balls["Purple_6"], balls["Cyan_6"], balls["Pink_6"], balls["Yellow_5"], balls["Purple_5"], balls["Cyan_5"], balls["Pink_5"], balls["Yellow_4"], balls["Purple_4"] };
+                        availableBalls = new List<BallDataSo> { balls["Purple_2"], balls["Yellow_4"], balls["Pink_5"], balls["Cyan_6"], balls["Purple_6"], balls["Cyan_8"] };
                         break;
 
                     case 18:
                         dimensions = new Vector2Int(5, 5);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPurple, discYellow, discCyan }),
-                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discCyan, discPink, discPurple }),
-                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discYellow, discPurple, discPink }),
-                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discPink, discCyan, discYellow }),
-                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discPurple, discYellow, discPink }),
-                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discCyan, discPurple, discCyan })
+                            new(new Vector2Int(0, 2), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discPink, discYellow }),
+                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discPurple }),
+                            new(new Vector2Int(2, 0), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discCyan, discPink }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discPurple, discCyan }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(2, 4), new List<StackableItemDataSo> { discPurple }),
+                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discYellow, discPurple }),
+                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discPink })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Cyan_8"], balls["Purple_8"], balls["Yellow_8"], balls["Pink_6"], balls["Purple_6"], balls["Cyan_6"], balls["Yellow_6"], balls["Pink_5"], balls["Purple_5"], balls["Cyan_5"], balls["Yellow_5"], balls["Pink_4"] };
+                        availableBalls = new List<BallDataSo> { balls["Cyan_3"], balls["Yellow_4"], balls["Pink_5"], balls["Purple_6"], balls["Cyan_6"], balls["Yellow_8"], balls["Pink_8"] };
                         break;
 
                     case 19:
                         dimensions = new Vector2Int(5, 5);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan, discPurple, discYellow, discPink }),
-                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discYellow, discPink, discCyan, discPurple }),
-                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discPurple, discCyan, discPink, discYellow }),
-                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discPink, discYellow, discPurple, discCyan }),
-                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discYellow, discPurple, discCyan, discPink }),
-                            new(new Vector2Int(2, 4), new List<StackableItemDataSo> { discCyan, discPink, discYellow, discPurple })
+                            new(new Vector2Int(1, 0), new List<StackableItemDataSo> { discPurple }),
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan, discPurple }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discPurple, discPink }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discYellow, discPurple }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(2, 4), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discCyan, discYellow }),
+                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discPurple }),
+                            new(new Vector2Int(3, 4), new List<StackableItemDataSo> { discCyan })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Pink_8"], balls["Yellow_8"], balls["Purple_8"], balls["Cyan_8"], balls["Pink_6"], balls["Yellow_6"], balls["Purple_6"], balls["Cyan_6"], balls["Pink_5"], balls["Yellow_5"], balls["Purple_5"], balls["Cyan_5"] };
+                        availableBalls = new List<BallDataSo> { balls["Purple_2"], balls["Cyan_4"], balls["Yellow_5"], balls["Pink_6"], balls["Purple_6"], balls["Cyan_8"], balls["Yellow_8"] };
                         break;
 
                     case 20:
                         dimensions = new Vector2Int(5, 5);
                         stacks = new List<StackableItemStackData>
                         {
-                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discPurple, discCyan, discYellow, discPink, discPurple }),
-                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discYellow, discPink, discPurple, discCyan, discYellow }),
-                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discPink, discPurple, discCyan, discYellow, discPink }),
-                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discCyan, discYellow, discPink, discPurple, discCyan }),
-                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discPurple, discPink, discYellow, discCyan, discPurple }),
-                            new(new Vector2Int(3, 4), new List<StackableItemDataSo> { discYellow, discCyan, discPurple, discPink, discYellow })
+                            new(new Vector2Int(0, 2), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(1, 1), new List<StackableItemDataSo> { discCyan }),
+                            new(new Vector2Int(1, 2), new List<StackableItemDataSo> { discPink, discCyan }),
+                            new(new Vector2Int(1, 3), new List<StackableItemDataSo> { discPurple }),
+                            new(new Vector2Int(2, 0), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(2, 1), new List<StackableItemDataSo> { discYellow, discPink }),
+                            new(new Vector2Int(2, 2), new List<StackableItemDataSo> { discPurple, discYellow, discCyan }),
+                            new(new Vector2Int(2, 3), new List<StackableItemDataSo> { discCyan, discPurple }),
+                            new(new Vector2Int(2, 4), new List<StackableItemDataSo> { discYellow }),
+                            new(new Vector2Int(3, 1), new List<StackableItemDataSo> { discPurple }),
+                            new(new Vector2Int(3, 2), new List<StackableItemDataSo> { discCyan, discPurple }),
+                            new(new Vector2Int(3, 3), new List<StackableItemDataSo> { discPink }),
+                            new(new Vector2Int(4, 2), new List<StackableItemDataSo> { discPurple })
                         };
-                        availableBalls = new List<BallDataSo> { balls["Purple_8"], balls["Yellow_8"], balls["Pink_8"], balls["Cyan_8"], balls["Purple_8"], balls["Yellow_6"], balls["Pink_6"], balls["Cyan_6"], balls["Purple_6"], balls["Yellow_5"], balls["Pink_5"], balls["Cyan_5"], balls["Purple_4"], balls["Yellow_4"] };
+                        availableBalls = new List<BallDataSo> { balls["Yellow_3"], balls["Cyan_5"], balls["Pink_6"], balls["Purple_6"], balls["Yellow_6"], balls["Cyan_8"], balls["Purple_8"] };
                         break;
 
                     default:

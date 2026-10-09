@@ -1,4 +1,4 @@
-%YAML 1.1
+﻿%YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
@@ -16,31 +16,38 @@ MonoBehaviour:
     _stackDataList:
     - _gridPos: {x: 1, y: 1}
       _items:
+      - {fileID: 11400000, guid: 7b585aff59fc4635a06991169d5cb27f, type: 2}
       - {fileID: 11400000, guid: 4d4afa9e79a429a4c9ffd57b2100833a, type: 2}
+      _itemDistance: 0.5
+    - _gridPos: {x: 1, y: 2}
+      _items:
+      - {fileID: 11400000, guid: 4d4afa9e79a429a4c9ffd57b2100833a, type: 2}
+      - {fileID: 11400000, guid: 7b585aff59fc4635a06991169d5cb27f, type: 2}
+      _itemDistance: 0.5
+    - _gridPos: {x: 1, y: 3}
+      _items:
+      - {fileID: 11400000, guid: 7b585aff59fc4635a06991169d5cb27f, type: 2}
+      _itemDistance: 0.5
+    - _gridPos: {x: 2, y: 1}
+      _items:
       - {fileID: 11400000, guid: 4d4afa9e79a429a4c9ffd57b2100833a, type: 2}
       - {fileID: 11400000, guid: 7b585aff59fc4635a06991169d5cb27f, type: 2}
       _itemDistance: 0.5
     - _gridPos: {x: 2, y: 2}
       _items:
       - {fileID: 11400000, guid: 7b585aff59fc4635a06991169d5cb27f, type: 2}
-      - {fileID: 11400000, guid: 7b585aff59fc4635a06991169d5cb27f, type: 2}
       - {fileID: 11400000, guid: 4d4afa9e79a429a4c9ffd57b2100833a, type: 2}
       _itemDistance: 0.5
-    - _gridPos: {x: 3, y: 2}
+    - _gridPos: {x: 2, y: 3}
       _items:
-      - {fileID: 11400000, guid: 4d4afa9e79a429a4c9ffd57b2100833a, type: 2}
-      - {fileID: 11400000, guid: 7b585aff59fc4635a06991169d5cb27f, type: 2}
       - {fileID: 11400000, guid: 4d4afa9e79a429a4c9ffd57b2100833a, type: 2}
       _itemDistance: 0.5
     _ballData:
       _availableBalls:
-      - {fileID: 11400000, guid: b00000000000000000000d0500000002, type: 2}
-      - {fileID: 11400000, guid: 179cec27b7322344c98cce586f032401, type: 2}
-      - {fileID: 11400000, guid: b00000000000000000000d0400000002, type: 2}
-      - {fileID: 11400000, guid: b00000000000000000000c0400000002, type: 2}
-      - {fileID: 11400000, guid: b00000000000000000000d0400000002, type: 2}
-      - {fileID: 11400000, guid: b00000000000000000000c0300000002, type: 2}
       - {fileID: 11400000, guid: f159a70b6f7e4055b0a68a8064046bb1, type: 2}
+      - {fileID: 11400000, guid: b00000000000000000000c0400000002, type: 2}
+      - {fileID: 11400000, guid: b00000000000000000000d0500000002, type: 2}
+      - {fileID: 11400000, guid: b00000000000000000000c0600000002, type: 2}
     _mapGrid:
       _dimensions: {x: 4, y: 4}
       _cellSize: 1

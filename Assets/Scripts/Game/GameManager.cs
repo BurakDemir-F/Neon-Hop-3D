@@ -23,6 +23,7 @@ namespace Game.Sorcerum
         [SerializeField] private StackQueueController _stackQueueController;
         [SerializeField] private BallController _ballController;
         [SerializeField] private LevelUIController _levelUIController;
+        [SerializeField] private MobileCameraFramer _cameraFramer;
 
         [Header("Level Progression")]
         [SerializeField] private List<LevelDataSo> _levels = new();
@@ -32,10 +33,12 @@ namespace Game.Sorcerum
         
         private ContextProvider _contextProvider;
         private bool _isLevelCompleted;
+        private bool _isLevelFailed;
 
         // Events
         public event Action<LevelDataSo> OnLevelStarted;
         public event Action<int> OnLevelWon;
+        public event Action<int> OnLevelFailed;
         public event Action<IAttributeProvider, int> OnBallSelected;
 
         public int CurrentLevelIndex => _currentLevelIndex;
@@ -43,6 +46,7 @@ namespace Game.Sorcerum
         public int TotalLevels => _levels != null ? _levels.Count : 0;
         public IReadOnlyList<LevelDataSo> Levels => _levels;
         public BallController BallController => _ballController;
+        public MobileCameraFramer CameraFramer => _cameraFramer;
 
         private void Awake()
         {
@@ -105,6 +109,19 @@ namespace Game.Sorcerum
                     _levelUIController = gameObject.AddComponent<LevelUIController>();
                 }
             }
+
+            if (_cameraFramer == null)
+            {
+                _cameraFramer = FindFirstObjectByType<MobileCameraFramer>();
+                if (_cameraFramer == null)
+                {
+                    var mainCam = Camera.main ?? FindFirstObjectByType<Camera>();
+                    if (mainCam != null)
+                    {
+                        _cameraFramer = mainCam.gameObject.AddComponent<MobileCameraFramer>();
+                    }
+                }
+            }
             
             if (_masterPool != null)
             {
@@ -155,6 +172,7 @@ namespace Game.Sorcerum
             }
 
             _isLevelCompleted = false;
+            _isLevelFailed = false;
             _currentLevelData = levelData;
 
             if (_levelManager != null)
@@ -198,21 +216,39 @@ namespace Game.Sorcerum
                 _levelUIController.ShowLevel(CurrentLevelNumber);
             }
 
+            // Frame camera dynamically for mobile orientation and grid dimensions
+            if (_cameraFramer != null && _currentLevelData != null && _currentLevelData.LevelDataVo != null)
+            {
+                _cameraFramer.FrameGrid(_currentLevelData.LevelDataVo.MapGrid, false);
+            }
+
             OnLevelStarted?.Invoke(_currentLevelData);
             Debug.Log($"[{nameof(GameManager)}] Level {CurrentLevelNumber} successfully built and initialized with '{_currentLevelData.name}'!");
         }
 
         /// <summary>
         /// Checks if all stacks in the current level are cleared. Triggers Level Win if so.
+        /// If uncleared and player has run out of balls and no balls are jumping, triggers Level Fail.
         /// </summary>
         public void CheckLevelComplete()
         {
-            if (_isLevelCompleted) return;
+            if (_isLevelCompleted || _isLevelFailed) return;
 
             if (_levelManager != null && _levelManager.AreAllStacksCleared())
             {
                 _isLevelCompleted = true;
                 StartCoroutine(LevelCompleteRoutine());
+                return;
+            }
+
+            // Check if player has run out of balls while stacks remain
+            int remainingBalls = _availableBallScreen != null ? _availableBallScreen.BallCount : 0;
+            bool hasRunningBalls = _ballController != null && _ballController.HasRunningBalls;
+
+            if (remainingBalls == 0 && !hasRunningBalls)
+            {
+                _isLevelFailed = true;
+                StartCoroutine(LevelFailedRoutine());
             }
         }
 
@@ -236,21 +272,46 @@ namespace Game.Sorcerum
             NextLevel();
         }
 
+        private IEnumerator LevelFailedRoutine()
+        {
+            int currentLevel = CurrentLevelNumber;
+            Debug.Log($"[{nameof(GameManager)}] Level {currentLevel} FAILED! Out of available balls.");
+            OnLevelFailed?.Invoke(currentLevel);
+
+            if (_levelUIController != null)
+            {
+                yield return _levelUIController.ShowLevelFailedRoutine(currentLevel);
+            }
+            else
+            {
+                yield return new WaitForSeconds(2.0f);
+                RestartLevel();
+            }
+        }
+
         /// <summary>
         /// Restarts the current level from scratch.
         /// </summary>
         [ContextMenu("Restart Level")]
         public void RestartLevel()
         {
+            StopAllCoroutines();
+            _isLevelCompleted = false;
+            _isLevelFailed = false;
+
             if (_currentLevelData != null)
             {
                 StartLevel(_currentLevelData);
+            }
+            else if (_levels != null && _levels.Count > 0)
+            {
+                LoadLevel(_currentLevelIndex);
             }
         }
 
         private void HandleBallSelected(IAttributeProvider ballProvider, int index)
         {
-            if (_isLevelCompleted) return;
+            if (_isLevelCompleted || _isLevelFailed) return;
 
             if (_ballController != null && _ballController.HasRunningBalls)
             {

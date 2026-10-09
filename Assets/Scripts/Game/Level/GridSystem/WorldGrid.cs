@@ -11,7 +11,7 @@ namespace Game.Sorcerum
 
         [Header("Grid Centering")]
         [Tooltip("World position representing the center of the screen where the grid should be centered.")]
-        [SerializeField] private Vector3 _targetGridCenter = new Vector3(0f, 0f, 2f);
+        [SerializeField] private Vector3 _targetGridCenter = new Vector3(0f, 0f, 1.2f);
         
         private IGrid<MapGridCell> _grid;
         private GridPositionProvider _positionProvider;

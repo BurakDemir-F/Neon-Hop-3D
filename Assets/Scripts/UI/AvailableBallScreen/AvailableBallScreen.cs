@@ -18,9 +18,9 @@ namespace Game.Sorcerum
         [SerializeField] private StyleSheet _styleSheet;
 
         [Header("Appearance")]
-        [SerializeField] private float _ballSize = 64f;
-        [SerializeField] private float _ballSpacing = 10f;
-        [SerializeField] private Color _trayBackgroundColor = new Color(0.10f, 0.12f, 0.16f, 0.88f);
+        [SerializeField] private float _ballSize = 96f;
+        [SerializeField] private float _ballSpacing = 16f;
+        [SerializeField] private Color _trayBackgroundColor = new Color(0.04f, 0.06f, 0.10f, 0.94f);
 
         // UI Elements
         private VisualElement _rootElement;
@@ -359,14 +359,14 @@ namespace Game.Sorcerum
                 itemRoot.style.borderBottomRightRadius = _ballSize * 0.5f;
 
                 // Border
-                itemRoot.style.borderLeftWidth = 3;
-                itemRoot.style.borderRightWidth = 3;
-                itemRoot.style.borderTopWidth = 3;
-                itemRoot.style.borderBottomWidth = 3;
-                itemRoot.style.borderLeftColor = new Color(1f, 1f, 1f, 0.4f);
-                itemRoot.style.borderRightColor = new Color(1f, 1f, 1f, 0.4f);
-                itemRoot.style.borderTopColor = new Color(1f, 1f, 1f, 0.4f);
-                itemRoot.style.borderBottomColor = new Color(1f, 1f, 1f, 0.4f);
+                itemRoot.style.borderLeftWidth = 3.5f;
+                itemRoot.style.borderRightWidth = 3.5f;
+                itemRoot.style.borderTopWidth = 3.5f;
+                itemRoot.style.borderBottomWidth = 3.5f;
+                itemRoot.style.borderLeftColor = new Color(1f, 1f, 1f, 0.75f);
+                itemRoot.style.borderRightColor = new Color(1f, 1f, 1f, 0.75f);
+                itemRoot.style.borderTopColor = new Color(1f, 1f, 1f, 0.75f);
+                itemRoot.style.borderBottomColor = new Color(1f, 1f, 1f, 0.75f);
 
                 iconElement = itemRoot;
 
@@ -375,12 +375,19 @@ namespace Game.Sorcerum
                 numberLabel.name = "ball-number";
                 numberLabel.AddToClassList("ball-number");
                 numberLabel.style.color = Color.white;
-                numberLabel.style.fontSize = Mathf.RoundToInt(_ballSize * 0.38f);
+                numberLabel.style.fontSize = Mathf.RoundToInt(_ballSize * 0.40f);
                 numberLabel.style.unityFontStyleAndWeight = FontStyle.Bold;
                 numberLabel.style.unityTextAlign = TextAnchor.MiddleCenter;
-                numberLabel.style.unityTextOutlineColor = new Color(0f, 0f, 0f, 0.85f);
-                numberLabel.style.unityTextOutlineWidth = 1.5f;
+                numberLabel.style.unityTextOutlineColor = new Color(0f, 0f, 0f, 0.95f);
+                numberLabel.style.unityTextOutlineWidth = 2.5f;
                 numberLabel.pickingMode = PickingMode.Ignore;
+
+                var gameFont = Resources.Load<Font>("GameFont");
+                if (gameFont != null)
+                {
+                    numberLabel.style.unityFont = gameFont;
+                    numberLabel.style.unityFontDefinition = FontDefinition.FromFont(gameFont);
+                }
 
                 itemRoot.Add(numberLabel);
             }
@@ -438,28 +445,28 @@ namespace Game.Sorcerum
             if (isSelected)
             {
                 item.Root.AddToClassList("ball-item--selected");
-                item.Root.style.scale = new StyleScale(new Scale(new Vector3(1.18f, 1.18f, 1f)));
-                item.Root.style.borderLeftColor = new Color(1f, 0.85f, 0.15f, 1f);
-                item.Root.style.borderRightColor = new Color(1f, 0.85f, 0.15f, 1f);
-                item.Root.style.borderTopColor = new Color(1f, 0.85f, 0.15f, 1f);
-                item.Root.style.borderBottomColor = new Color(1f, 0.85f, 0.15f, 1f);
-                item.Root.style.borderLeftWidth = 4;
-                item.Root.style.borderRightWidth = 4;
-                item.Root.style.borderTopWidth = 4;
-                item.Root.style.borderBottomWidth = 4;
+                item.Root.style.scale = new StyleScale(new Scale(new Vector3(1.16f, 1.16f, 1f)));
+                item.Root.style.borderLeftColor = new Color(1f, 0.88f, 0.15f, 1f); // Neon Gold
+                item.Root.style.borderRightColor = new Color(1f, 0.88f, 0.15f, 1f);
+                item.Root.style.borderTopColor = new Color(1f, 0.88f, 0.15f, 1f);
+                item.Root.style.borderBottomColor = new Color(1f, 0.88f, 0.15f, 1f);
+                item.Root.style.borderLeftWidth = 5f;
+                item.Root.style.borderRightWidth = 5f;
+                item.Root.style.borderTopWidth = 5f;
+                item.Root.style.borderBottomWidth = 5f;
             }
             else
             {
                 item.Root.RemoveFromClassList("ball-item--selected");
                 item.Root.style.scale = new StyleScale(new Scale(Vector3.one));
-                item.Root.style.borderLeftColor = new Color(1f, 1f, 1f, 0.4f);
-                item.Root.style.borderRightColor = new Color(1f, 1f, 1f, 0.4f);
-                item.Root.style.borderTopColor = new Color(1f, 1f, 1f, 0.4f);
-                item.Root.style.borderBottomColor = new Color(1f, 1f, 1f, 0.4f);
-                item.Root.style.borderLeftWidth = 3;
-                item.Root.style.borderRightWidth = 3;
-                item.Root.style.borderTopWidth = 3;
-                item.Root.style.borderBottomWidth = 3;
+                item.Root.style.borderLeftColor = new Color(1f, 1f, 1f, 0.75f);
+                item.Root.style.borderRightColor = new Color(1f, 1f, 1f, 0.75f);
+                item.Root.style.borderTopColor = new Color(1f, 1f, 1f, 0.75f);
+                item.Root.style.borderBottomColor = new Color(1f, 1f, 1f, 0.75f);
+                item.Root.style.borderLeftWidth = 3.5f;
+                item.Root.style.borderRightWidth = 3.5f;
+                item.Root.style.borderTopWidth = 3.5f;
+                item.Root.style.borderBottomWidth = 3.5f;
             }
         }
 
@@ -487,7 +494,7 @@ namespace Game.Sorcerum
             screenWrapper.name = "available-ball-screen";
             screenWrapper.AddToClassList("screen-root");
             screenWrapper.style.position = Position.Absolute;
-            screenWrapper.style.bottom = 24;
+            screenWrapper.style.bottom = 36;
             screenWrapper.style.left = 0;
             screenWrapper.style.right = 0;
             screenWrapper.style.alignItems = Align.Center;
@@ -501,32 +508,43 @@ namespace Game.Sorcerum
             _trayElement.style.flexDirection = FlexDirection.Column;
             _trayElement.style.alignItems = Align.Center;
             _trayElement.style.backgroundColor = _trayBackgroundColor;
-            _trayElement.style.borderTopLeftRadius = 24;
-            _trayElement.style.borderTopRightRadius = 24;
-            _trayElement.style.borderBottomLeftRadius = 24;
-            _trayElement.style.borderBottomRightRadius = 24;
-            _trayElement.style.paddingTop = 10;
-            _trayElement.style.paddingBottom = 16;
-            _trayElement.style.paddingLeft = 20;
-            _trayElement.style.paddingRight = 20;
-            _trayElement.style.borderLeftWidth = 2;
-            _trayElement.style.borderRightWidth = 2;
-            _trayElement.style.borderTopWidth = 2;
-            _trayElement.style.borderBottomWidth = 2;
-            _trayElement.style.borderLeftColor = new Color(1f, 1f, 1f, 0.15f);
-            _trayElement.style.borderRightColor = new Color(1f, 1f, 1f, 0.15f);
-            _trayElement.style.borderTopColor = new Color(1f, 1f, 1f, 0.15f);
-            _trayElement.style.borderBottomColor = new Color(1f, 1f, 1f, 0.15f);
+            _trayElement.style.borderTopLeftRadius = 36;
+            _trayElement.style.borderTopRightRadius = 36;
+            _trayElement.style.borderBottomLeftRadius = 36;
+            _trayElement.style.borderBottomRightRadius = 36;
+            _trayElement.style.paddingTop = 14;
+            _trayElement.style.paddingBottom = 22;
+            _trayElement.style.paddingLeft = 28;
+            _trayElement.style.paddingRight = 28;
+            _trayElement.style.borderLeftWidth = 3.5f;
+            _trayElement.style.borderRightWidth = 3.5f;
+            _trayElement.style.borderTopWidth = 3.5f;
+            _trayElement.style.borderBottomWidth = 3.5f;
+            _trayElement.style.borderLeftColor = new Color(0f, 0.92f, 1f, 1f); // Neon Cyan
+            _trayElement.style.borderRightColor = new Color(0f, 0.92f, 1f, 1f);
+            _trayElement.style.borderTopColor = new Color(0f, 0.92f, 1f, 1f);
+            _trayElement.style.borderBottomColor = new Color(0f, 0.92f, 1f, 1f);
+
+            var gameFont = Resources.Load<Font>("GameFont");
 
             // Header Label
             _headerLabel = new Label("AVAILABLE BALLS");
             _headerLabel.name = "header-label";
             _headerLabel.AddToClassList("header-label");
-            _headerLabel.style.color = new Color(0.85f, 0.88f, 0.95f, 0.9f);
-            _headerLabel.style.fontSize = 13;
+            _headerLabel.style.color = new Color(0f, 0.92f, 1f, 1f);
+            _headerLabel.style.fontSize = 18;
             _headerLabel.style.unityFontStyleAndWeight = FontStyle.Bold;
-            _headerLabel.style.marginBottom = 10;
+            _headerLabel.style.unityTextOutlineColor = new Color(0f, 0.92f, 1f, 0.5f);
+            _headerLabel.style.unityTextOutlineWidth = 1f;
+            _headerLabel.style.marginBottom = 12;
             _headerLabel.pickingMode = PickingMode.Ignore;
+
+            if (gameFont != null)
+            {
+                _headerLabel.style.unityFont = gameFont;
+                _headerLabel.style.unityFontDefinition = FontDefinition.FromFont(gameFont);
+            }
+
             _trayElement.Add(_headerLabel);
 
             // Balls Container
@@ -537,7 +555,7 @@ namespace Game.Sorcerum
             _ballsContainer.style.alignItems = Align.Center;
             _ballsContainer.style.justifyContent = Justify.Center;
             _ballsContainer.style.flexWrap = Wrap.Wrap;
-            _ballsContainer.style.maxWidth = 650;
+            _ballsContainer.style.maxWidth = 950;
             _trayElement.Add(_ballsContainer);
 
             screenWrapper.Add(_trayElement);
