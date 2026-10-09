@@ -12,7 +12,7 @@ namespace Game.Sorcerum
         private List<StackableItem> _itemList = new();
 
         public Transform StackRoot => _stackRoot;
-        public Vector2Int GridPos => _stackableItemStackData.GridPos;
+        public Vector2Int GridPos => _stackableItemStackData != null ? _stackableItemStackData.GridPos : Vector2Int.zero;
 
         public void Initialize(StackableItemStackData stackableItemStackData)
         {
@@ -21,21 +21,29 @@ namespace Game.Sorcerum
 
         public void AddToStack(StackableItem stackableItem)
         {
+            if (stackableItem == null) return;
+
             _itemList.Add(stackableItem);
             stackableItem.CurrentStack = this;
-            stackableItem.Transform.SetParent(_stackRoot);
+            stackableItem.Transform.SetParent(_stackRoot, false);
 
+            float distance = _stackableItemStackData != null ? _stackableItemStackData.ItemDistance : 0.5f;
             stackableItem.transform.localPosition = new Vector3(0f,
-                _itemList.Count * _stackableItemStackData.ItemDistance,
+                _itemList.Count * distance,
                 0f);
+            stackableItem.transform.localRotation = Quaternion.identity;
+            stackableItem.transform.localScale = Vector3.one;
         }
 
         public void ClearStack()
         {
             foreach (var stackableItem in _itemList)
             {
-                stackableItem.CurrentStack = null;
-                stackableItem.ReturnToPool();
+                if (stackableItem != null)
+                {
+                    stackableItem.CurrentStack = null;
+                    stackableItem.ReturnToPool();
+                }
             }
             
             _itemList.Clear();
@@ -50,7 +58,10 @@ namespace Game.Sorcerum
 
             var item = _itemList[index];
             _itemList.RemoveAt(index);
-            item.CurrentStack = null;
+            if (item != null)
+            {
+                item.CurrentStack = null;
+            }
 
             return item;
         }
@@ -69,11 +80,15 @@ namespace Game.Sorcerum
         public void GetFromPool()
         {
             gameObject.SetActive(true);
+            transform.localScale = Vector3.one;
+            transform.localRotation = Quaternion.identity;
         }
 
         void IPoolObjectSetter.ReturnedToPool()
         {
             gameObject.SetActive(false);
+            transform.localScale = Vector3.one;
+            transform.localRotation = Quaternion.identity;
         }
 
         public IPool Pool { get; set; }
@@ -85,7 +100,7 @@ namespace Game.Sorcerum
 
         public void ReturnToPool()
         {
-            Pool.Return(this);
+            Pool?.Return(this);
         }
     }
 

@@ -1,4 +1,5 @@
 using System;
+using DG.Tweening;
 using Game.Pool.AddressablesLocal.Scripts.Runtime;
 using General;
 using UnityEngine;
@@ -39,36 +40,98 @@ namespace Game.Sorcerum
             foreach (var attributeBase in _attributeCollection)
                 attributeBase.Initialize(contextProvider);
 
+            ResetDissolve();
+
             if (_attributeCollection.TryGetAttribute<ColorIdAttribute>(out var colorIdAttribute))
             {
-                var renderer = GetComponentInChildren<MeshRenderer>();
-                if (renderer != null)
+                if (_renderer == null)
+                    _renderer = GetComponentInChildren<MeshRenderer>();
+                if (_renderer != null)
                 {
-                    renderer.material.color = ColorIntConverter.IntToColor(colorIdAttribute.GetId());
+                    _renderer.material.color = ColorIntConverter.IntToColor(colorIdAttribute.GetId());
                 }
             }
         }
 
-        public void Crack()
+        private static readonly int DissolveAmountId = Shader.PropertyToID("_DissolveAmount");
+        private MeshRenderer _renderer;
+        private Tween _dissolveTween;
+
+        public void ResetDissolve()
+        {
+            if (_renderer == null)
+                _renderer = GetComponentInChildren<MeshRenderer>();
+            if (_renderer != null && _renderer.material != null && _renderer.material.HasProperty(DissolveAmountId))
+            {
+                _renderer.material.SetFloat(DissolveAmountId, 0f);
+            }
+        }
+
+        public void SetDissolve(float amount)
+        {
+            if (_renderer == null)
+                _renderer = GetComponentInChildren<MeshRenderer>();
+            if (_renderer != null && _renderer.material != null && _renderer.material.HasProperty(DissolveAmountId))
+            {
+                _renderer.material.SetFloat(DissolveAmountId, amount);
+            }
+        }
+
+        public void Crack(Action onComplete = null)
         {
             var hasCrackAttribute = _attributeCollection.TryGetObject<CrackAttribute>(out var crackAttribute);
             
-            if(!hasCrackAttribute)
+            if (!hasCrackAttribute)
+            {
+                onComplete?.Invoke();
+                ReturnToPool();
                 return;
+            }
 
-            DG.Tweening.ShortcutExtensions.DOScale(transform, Vector3.zero, 0.15f);
+            _dissolveTween?.Kill();
+            DG.Tweening.ShortcutExtensions.DOKill(transform);
+
+            // Detach from stack root so it dissolves cleanly in place
+            transform.SetParent(null, true);
+
+            float dissolveVal = 0f;
+            SetDissolve(0f);
+
+            _dissolveTween = DG.Tweening.DOTween.To(() => dissolveVal, x =>
+            {
+                dissolveVal = x;
+                SetDissolve(dissolveVal);
+            }, 1f, 0.35f)
+            .SetEase(DG.Tweening.Ease.InQuad)
+            .OnComplete(() =>
+            {
+                _dissolveTween = null;
+                onComplete?.Invoke();
+                ReturnToPool();
+            });
         }
         
         public string Key { get; set; }
         public void GetFromPool()
         {
+            _dissolveTween?.Kill();
+            _dissolveTween = null;
+            DG.Tweening.ShortcutExtensions.DOKill(transform);
             gameObject.SetActive(true);
             transform.localScale = Vector3.one;
+            transform.localRotation = Quaternion.identity;
+            ResetDissolve();
         }
 
         void IPoolObjectSetter.ReturnedToPool()
         {
+            _dissolveTween?.Kill();
+            _dissolveTween = null;
+            DG.Tweening.ShortcutExtensions.DOKill(transform);
             gameObject.SetActive(false);
+            transform.localScale = Vector3.one;
+            transform.localRotation = Quaternion.identity;
+            ResetDissolve();
         }
 
         public IPool Pool { get; set; }
@@ -80,7 +143,7 @@ namespace Game.Sorcerum
 
         public void ReturnToPool()
         {
-            Pool.Return(this);
+            Pool?.Return(this);
         }
     }
 }

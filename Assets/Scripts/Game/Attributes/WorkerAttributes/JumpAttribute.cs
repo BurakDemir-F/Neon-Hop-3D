@@ -33,11 +33,20 @@ namespace Game.Sorcerum
 
             while (hasNextCell && workChecker.ShouldWork && owner.RemainingJump > 0 && owner.Go.activeInHierarchy)
             {
+                if (nextCell == null || nextCell.Stack == null)
+                {
+                    hasNextCell = nextPositionProvider.TryGetNextPosition(
+                        new Vector2Int(nextCell != null ? nextCell.XPos : 0, nextCell != null ? nextCell.YPos : 0),
+                        true,
+                        out nextCell);
+                    continue;
+                }
+
                 var hasItem = nextCell.Stack.HasItem();
                 nextCell.Stack.GetTop(out var stackableItem);
 
                 // Parabolic jump arc over to the top stackable item
-                Vector3 targetPos = (hasItem ? stackableItem.Transform.position : nextCell.Stack.StackRoot.position) +
+                Vector3 targetPos = (hasItem && stackableItem != null ? stackableItem.Transform.position : nextCell.Stack.StackRoot.position) +
                                     Vector3.up * 0.4f;
 
                 yield return owner.transform.DOJump(targetPos, 0.8f, 1, moveDuration)

@@ -13,32 +13,32 @@ MonoBehaviour:
   m_Name: BallBrain_Yellow_3
   m_EditorClassIdentifier: Assembly-CSharp::Game.Sorcerum.BrainSo
   _attributeBaseList:
-  - rid: 6423604256275957659
-  - rid: 6423604256275957660
-  - rid: 6423604256275957661
-  - rid: 6423604256275957662
-  - rid: 6423604256275957663
+  - rid: 6423604256275963935
+  - rid: 6423604256275963936
+  - rid: 6423604256275963937
+  - rid: 6423604256275963938
+  - rid: 6423604256275963939
   references:
     version: 2
     RefIds:
-    - rid: 6423604256275957659
+    - rid: 6423604256275963935
       type: {class: JumpAttribute, ns: Game.Sorcerum, asm: Assembly-CSharp}
       data: 
-    - rid: 6423604256275957660
+    - rid: 6423604256275963936
       type: {class: ToughnessAttribute, ns: , asm: Assembly-CSharp}
       data:
         _hitCount: 3
-    - rid: 6423604256275957661
+    - rid: 6423604256275963937
       type: {class: ColorIdAttribute, ns: Game.Sorcerum, asm: Assembly-CSharp}
       data:
         AlwaysAccept: -999
         _color: {r: 1, g: 0.85, b: 0.1, a: 1}
-    - rid: 6423604256275957662
+    - rid: 6423604256275963938
       type: {class: MovementAttribute, ns: , asm: Assembly-CSharp}
       data:
         _moveDuration: 0.35
         _ease: 6
-    - rid: 6423604256275957663
+    - rid: 6423604256275963939
       type: {class: PoolObjectAttribute, ns: Game.Sorcerum, asm: Assembly-CSharp}
       data:
         _poolKey:

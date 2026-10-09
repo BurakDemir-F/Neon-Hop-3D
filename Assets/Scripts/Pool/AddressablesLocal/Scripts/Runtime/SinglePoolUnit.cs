@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Game.Pool.AddressablesLocal.Scripts.VO;
 using Game.Shared.AddressablesLocal.Scripts.Utilities;
 using UnityEngine;
@@ -57,7 +57,11 @@ namespace Game.Pool.AddressablesLocal.Scripts.Runtime
                     return;
                 }
 
-                _borrowedObjects.Remove(controller);
+                if (!_borrowedObjects.Remove(controller))
+                {
+                    // Object was already returned or not borrowed from this pool
+                    return;
+                }
                 
                 controller.ReturnedToPool();
                 controller.Go.transform.SetParent(_root, false);

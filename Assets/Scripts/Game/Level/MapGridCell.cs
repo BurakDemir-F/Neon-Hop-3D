@@ -22,11 +22,15 @@ namespace Game.Sorcerum
         void IPoolObjectSetter.GetFromPool()
         {
             gameObject.SetActive(true);
+            transform.localScale = Vector3.one;
+            transform.localRotation = Quaternion.identity;
         }
 
         void IPoolObjectSetter.ReturnedToPool()
         {
             gameObject.SetActive(false);
+            transform.localScale = Vector3.one;
+            transform.localRotation = Quaternion.identity;
         }
 
         IPool IPoolObjectSetter.Pool { get; set; }

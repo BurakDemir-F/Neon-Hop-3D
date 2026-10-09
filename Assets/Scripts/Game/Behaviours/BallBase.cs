@@ -45,7 +45,7 @@ namespace Game.Sorcerum
             Initialize(_ballData, contextProvider);
         }
 
-        public IEnumerator Jump()
+        public virtual IEnumerator Jump()
         {
             if (_attributeCollection.TryGetObject<JumpAttribute>(out var jumperAttribute))
             {
@@ -57,16 +57,21 @@ namespace Game.Sorcerum
 
         public string Key { get; set; }
 
-        public void GetFromPool()
+        public virtual void GetFromPool()
         {
             gameObject.SetActive(true);
             transform.localScale = Vector3.one;
         }
 
-        void IPoolObjectSetter.ReturnedToPool()
+        public virtual void ReturnedToPool()
         {
             StopAllCoroutines();
             gameObject.SetActive(false);
+        }
+
+        void IPoolObjectSetter.ReturnedToPool()
+        {
+            ReturnedToPool();
         }
 
         public IPool Pool { get; set; }

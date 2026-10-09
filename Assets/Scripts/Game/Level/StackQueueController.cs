@@ -31,6 +31,8 @@ namespace Game.Sorcerum
             _cellQueue = cellList;
         }
         
+        public IReadOnlyList<StackGridCell> CellQueue => _cellQueue;
+        
         public bool TryGetNextPosition(Vector2Int currentPos, bool hasCurrentPos, out StackGridCell nextCell)
         {
             nextCell = null;
@@ -62,6 +64,7 @@ namespace Game.Sorcerum
 
     public interface INextPositionProvider
     {
+        IReadOnlyList<StackGridCell> CellQueue { get; }
         bool TryGetNextPosition(Vector2Int currentPos, bool hasCurrentPos, out StackGridCell nextCell);
     }
 }

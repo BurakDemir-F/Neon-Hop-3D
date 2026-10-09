@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Game.Pool.AddressablesLocal.Scripts.SO;
@@ -12,7 +12,7 @@ namespace Game.Sorcerum
     //TODO:: add highlight functionality.
     
     [CustomEditor(typeof(PoolConfigSo))]
-    public class PoolConfigInspector : Editor
+    public class PoolConfigInspector : UnityEditor.Editor
     {
         private PoolConfigSo _poolConfig;
         private SerializedObject _configObj;

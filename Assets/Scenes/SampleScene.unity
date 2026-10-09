@@ -505,7 +505,7 @@ Transform:
   m_GameObject: {fileID: 1068935081}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.92, y: -0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -550,7 +550,7 @@ MonoBehaviour:
   _ballController: {fileID: 1219868430}
   _levelUIController: {fileID: 1219868431}
   _levels:
-  - {fileID: 11400000, guid: f0000000000000000000000000000001, type: 2}
+  - {fileID: 11400000, guid: 04d1dcb0edf4c91419decc9d61a6c077, type: 2}
   - {fileID: 11400000, guid: f0000000000000000000000000000002, type: 2}
   - {fileID: 11400000, guid: f0000000000000000000000000000003, type: 2}
   - {fileID: 11400000, guid: f0000000000000000000000000000004, type: 2}
@@ -571,7 +571,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f0000000000000000000000000000019, type: 2}
   - {fileID: 11400000, guid: f0000000000000000000000000000020, type: 2}
   _currentLevelIndex: 0
-  _currentLevelData: {fileID: 11400000, guid: f0000000000000000000000000000001, type: 2}
+  _currentLevelData: {fileID: 11400000, guid: 04d1dcb0edf4c91419decc9d61a6c077, type: 2}
   _autoBuildOnStart: 1
 --- !u!4 &1219868428
 Transform:
@@ -612,6 +612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6a4deb3891c41388e8cab26eb1e3079, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Sorcerum.BallController
+  _availableBallScreen: {fileID: 1842206404}
 --- !u!114 &1219868431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,6 +667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Game.Sorcerum.WorldGrid
   _gridOrigin: {fileID: 1068935082}
+  _targetGridCenter: {x: 0, y: 0, z: 2}
 --- !u!4 &2049854866
 Transform:
   m_ObjectHideFlags: 0

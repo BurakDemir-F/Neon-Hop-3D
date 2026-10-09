@@ -23,6 +23,11 @@ namespace Game.Sorcerum
         private Label _bannerMainLabel;
         private Label _bannerSubLabel;
 
+        private VisualElement _boosterContainer;
+        private Button _boosterButton;
+
+        public event Action OnBoosterClicked;
+
         private bool _isInitialized;
 
         private void Awake()
@@ -177,6 +182,109 @@ namespace Game.Sorcerum
                 _bannerCard = _bannerOverlay.Q<VisualElement>("banner-card");
                 _bannerMainLabel = _bannerOverlay.Q<Label>("banner-main-label");
                 _bannerSubLabel = _bannerOverlay.Q<Label>("banner-sub-label");
+            }
+
+            // 3. Right-Side Booster Summon Button
+            _boosterContainer = _rootElement.Q<VisualElement>("booster-container");
+            if (_boosterContainer == null)
+            {
+                _boosterContainer = new VisualElement
+                {
+                    name = "booster-container",
+                    pickingMode = PickingMode.Position
+                };
+                _boosterContainer.style.position = Position.Absolute;
+                _boosterContainer.style.right = 20f;
+                _boosterContainer.style.bottom = 150f;
+                _boosterContainer.style.alignItems = Align.Center;
+                _boosterContainer.style.justifyContent = Justify.Center;
+
+                _boosterButton = new Button(OnBoosterButtonClicked)
+                {
+                    name = "booster-button"
+                };
+                _boosterButton.style.width = 68f;
+                _boosterButton.style.height = 68f;
+                _boosterButton.style.backgroundColor = new Color(0.08f, 0.11f, 0.17f, 0.92f);
+                _boosterButton.style.borderLeftColor = new Color(1f, 0.82f, 0.2f, 0.95f);
+                _boosterButton.style.borderRightColor = new Color(1f, 0.82f, 0.2f, 0.95f);
+                _boosterButton.style.borderTopColor = new Color(1f, 0.82f, 0.2f, 0.95f);
+                _boosterButton.style.borderBottomColor = new Color(1f, 0.82f, 0.2f, 0.95f);
+                _boosterButton.style.borderLeftWidth = 2.5f;
+                _boosterButton.style.borderRightWidth = 2.5f;
+                _boosterButton.style.borderTopWidth = 2.5f;
+                _boosterButton.style.borderBottomWidth = 2.5f;
+                _boosterButton.style.borderTopLeftRadius = 34f;
+                _boosterButton.style.borderTopRightRadius = 34f;
+                _boosterButton.style.borderBottomLeftRadius = 34f;
+                _boosterButton.style.borderBottomRightRadius = 34f;
+                _boosterButton.style.alignItems = Align.Center;
+                _boosterButton.style.justifyContent = Justify.Center;
+                _boosterButton.style.paddingLeft = 0f;
+                _boosterButton.style.paddingRight = 0f;
+                _boosterButton.style.paddingTop = 0f;
+                _boosterButton.style.paddingBottom = 0f;
+
+                var iconLabel = new Label("⚡")
+                {
+                    name = "booster-icon-label",
+                    pickingMode = PickingMode.Ignore
+                };
+                iconLabel.style.fontSize = 24f;
+                iconLabel.style.color = new Color(1f, 0.88f, 0.25f, 1f);
+                iconLabel.style.unityTextAlign = TextAnchor.MiddleCenter;
+
+                var textLabel = new Label("BOOST")
+                {
+                    name = "booster-text-label",
+                    pickingMode = PickingMode.Ignore
+                };
+                textLabel.style.fontSize = 10f;
+                textLabel.style.unityFontStyleAndWeight = FontStyle.Bold;
+                textLabel.style.color = new Color(0.95f, 0.95f, 0.95f, 0.9f);
+                textLabel.style.unityTextAlign = TextAnchor.MiddleCenter;
+                textLabel.style.marginTop = -2f;
+
+                _boosterButton.Add(iconLabel);
+                _boosterButton.Add(textLabel);
+
+                _boosterButton.RegisterCallback<PointerDownEvent>(evt =>
+                {
+                    _boosterButton.style.scale = new StyleScale(new Scale(new Vector3(0.9f, 0.9f, 1f)));
+                });
+                _boosterButton.RegisterCallback<PointerUpEvent>(evt =>
+                {
+                    _boosterButton.style.scale = new StyleScale(new Scale(Vector3.one));
+                });
+
+                _boosterContainer.Add(_boosterButton);
+                _rootElement.Add(_boosterContainer);
+            }
+            else
+            {
+                _boosterButton = _boosterContainer.Q<Button>("booster-button");
+            }
+        }
+
+        private void Update()
+        {
+            if (_boosterButton != null)
+            {
+                var ballController = GameManager.Instance != null ? GameManager.Instance.BallController : null;
+                bool canBoost = ballController == null || !ballController.HasRunningBalls;
+                _boosterButton.SetEnabled(canBoost);
+                _boosterButton.style.opacity = canBoost ? 1f : 0.45f;
+            }
+        }
+
+        private void OnBoosterButtonClicked()
+        {
+            OnBoosterClicked?.Invoke();
+
+            var ballController = GameManager.Instance != null ? GameManager.Instance.BallController : FindFirstObjectByType<BallController>();
+            if (ballController != null && !ballController.HasRunningBalls)
+            {
+                ballController.LaunchBooster();
             }
         }
 

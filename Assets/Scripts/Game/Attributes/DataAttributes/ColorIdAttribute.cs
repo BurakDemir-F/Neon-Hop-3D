@@ -11,7 +11,7 @@ namespace Game.Sorcerum
             return idToCheck == AlwaysAccept || ColorIntConverter.ColorToInt(_color) == idToCheck;
         }
 
-        public int GetId() => ColorIntConverter.ColorToInt(_color);
+        public override int GetId() => ColorIntConverter.ColorToInt(_color);
         public Color Color => _color;
     }
 

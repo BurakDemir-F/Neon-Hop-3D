@@ -42,6 +42,7 @@ namespace Game.Sorcerum
         public int CurrentLevelNumber => _currentLevelIndex + 1;
         public int TotalLevels => _levels != null ? _levels.Count : 0;
         public IReadOnlyList<LevelDataSo> Levels => _levels;
+        public BallController BallController => _ballController;
 
         private void Awake()
         {
@@ -189,9 +190,11 @@ namespace Game.Sorcerum
                 _availableBallScreen.OnBallSelected += HandleBallSelected;
             }
 
-            // Display current level in UI
+            // Display current level in UI and hook up booster
             if (_levelUIController != null)
             {
+                _levelUIController.OnBoosterClicked -= HandleBoosterClicked;
+                _levelUIController.OnBoosterClicked += HandleBoosterClicked;
                 _levelUIController.ShowLevel(CurrentLevelNumber);
             }
 
@@ -283,8 +286,21 @@ namespace Game.Sorcerum
             _levels = levels;
         }
 
+        private void HandleBoosterClicked()
+        {
+            if (_ballController != null && !_ballController.HasRunningBalls)
+            {
+                _ballController.LaunchBooster();
+            }
+        }
+
         private void OnDestroy()
         {
+            if (_levelUIController != null)
+            {
+                _levelUIController.OnBoosterClicked -= HandleBoosterClicked;
+            }
+
             if (_availableBallScreen != null)
             {
                 _availableBallScreen.OnBallSelected -= HandleBallSelected;

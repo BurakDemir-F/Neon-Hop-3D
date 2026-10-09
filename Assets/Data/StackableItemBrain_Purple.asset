@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: StackableItemBrain_Purple
   m_EditorClassIdentifier: Assembly-CSharp::Game.Sorcerum.BrainSo
   _attributeBaseList:
-  - rid: 6423604256275961813
-  - rid: 6423604256275961814
+  - rid: 6423604256275957383
+  - rid: 6423604256275957384
   references:
     version: 2
     RefIds:
-    - rid: 6423604256275961813
+    - rid: 6423604256275957383
       type: {class: CrackAttribute, ns: Game.Sorcerum, asm: Assembly-CSharp}
       data: 
-    - rid: 6423604256275961814
+    - rid: 6423604256275957384
       type: {class: ColorIdAttribute, ns: Game.Sorcerum, asm: Assembly-CSharp}
       data:
         AlwaysAccept: -999

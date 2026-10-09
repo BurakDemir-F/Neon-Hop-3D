@@ -64,7 +64,6 @@ namespace General
             {
                 item.CurrentStack?.RemoveFromStack();
                 item.Crack();
-                item.ReturnToPool();
             }
         }
 

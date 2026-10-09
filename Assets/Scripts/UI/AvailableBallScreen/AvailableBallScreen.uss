@@ -40,14 +40,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    max-width: 650px;
 }
 
 .ball-item {
-    width: 72px;
-    height: 72px;
-    margin-left: 8px;
-    margin-right: 8px;
+    width: 66px;
+    height: 66px;
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     justify-content: center;
     align-items: center;
     border-top-left-radius: 36px;

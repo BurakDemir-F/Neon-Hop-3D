@@ -18,8 +18,8 @@ namespace Game.Sorcerum
         [SerializeField] private StyleSheet _styleSheet;
 
         [Header("Appearance")]
-        [SerializeField] private float _ballSize = 72f;
-        [SerializeField] private float _ballSpacing = 16f;
+        [SerializeField] private float _ballSize = 64f;
+        [SerializeField] private float _ballSpacing = 10f;
         [SerializeField] private Color _trayBackgroundColor = new Color(0.10f, 0.12f, 0.16f, 0.88f);
 
         // UI Elements
@@ -536,7 +536,8 @@ namespace Game.Sorcerum
             _ballsContainer.style.flexDirection = FlexDirection.Row;
             _ballsContainer.style.alignItems = Align.Center;
             _ballsContainer.style.justifyContent = Justify.Center;
-            _ballsContainer.style.flexWrap = Wrap.NoWrap;
+            _ballsContainer.style.flexWrap = Wrap.Wrap;
+            _ballsContainer.style.maxWidth = 650;
             _trayElement.Add(_ballsContainer);
 
             screenWrapper.Add(_trayElement);

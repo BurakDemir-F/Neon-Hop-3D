@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace General.GridSystem
 {
@@ -15,9 +15,10 @@ namespace General.GridSystem
             var x = positionOnGrid.x;
             var y = positionOnGrid.y;
             var cellSizeOffset = GetCellSizeOffset();
+            var origin = _originTransform != null ? _originTransform.position : _originPosition;
             
-            return new Vector3(_originPosition.x + (x * (_cellSize + _padding)) + cellSizeOffset,
-                _originPosition.y , _originPosition.z + (y * (_cellSize + _padding)) + cellSizeOffset);
+            return new Vector3(origin.x + (x * (_cellSize + _padding)) + cellSizeOffset,
+                origin.y, origin.z + (y * (_cellSize + _padding)) + cellSizeOffset);
         }
     }
 }

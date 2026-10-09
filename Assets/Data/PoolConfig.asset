@@ -38,3 +38,9 @@ MonoBehaviour:
     PoolKey: simpleStackableItem
     Creator: {fileID: 11400000, guid: b3ecf5103f0bf6d4682d641b8fc4ae1e, type: 2}
     Releaser: {fileID: 0}
+  - PoolObjectPrefab: {fileID: 7283942102737392500, guid: 3faf73224bb74cbaa41bb42cf53410d8, type: 3}
+    DefaultCapacity: 2
+    PoolKey: boosterBall
+    Creator: {fileID: 11400000, guid: b3ecf5103f0bf6d4682d641b8fc4ae1e, type: 2}
+    Releaser: {fileID: 0}
+

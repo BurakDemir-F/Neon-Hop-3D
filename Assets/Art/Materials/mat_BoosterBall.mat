@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4329221083215529508
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  version: 10
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: mat_BoosterBall
+  m_Shader: {fileID: 4800000, guid: 7f09c6f796c240578f07328ef3f75085, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap:
+    RenderType: Opaque
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _CoreDarkness: 0.15
+    - _RimPower: 2.0
+    - _RimIntensity: 5.0
+    - _EmissionBoost: 2.5
+    - _DissolveAmount: 0
+    - _DissolveWidth: 0.08
+    - _DissolveIntensity: 8
+    - _NoiseScale: 4.5
+    m_Colors:
+    - _BaseColor: {r: 1, g: 0.82, b: 0.15, a: 1}
+    - _Color: {r: 1, g: 0.82, b: 0.15, a: 1}
+    - _RimColor: {r: 1, g: 0.95, b: 0.4, a: 1}
+    - _DissolveEdgeColor: {r: 1, g: 0.55, b: 0.05, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

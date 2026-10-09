@@ -7,5 +7,6 @@ namespace Game.Sorcerum
     {
         [SerializeField] protected int AlwaysAccept = -999;  
         public abstract bool IsMatching(int idToCheck);
+        public abstract int GetId();
     }
 }

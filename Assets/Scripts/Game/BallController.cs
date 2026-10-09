@@ -129,6 +129,54 @@ namespace Game.Sorcerum
             // Check if all stacks in level are cleared
             GameManager.Instance?.CheckLevelComplete();
         }
+
+        public void LaunchBooster()
+        {
+            if (HasRunningBalls) return;
+            StartCoroutine(LaunchBoosterRoutine());
+        }
+
+        private IEnumerator LaunchBoosterRoutine()
+        {
+            if (_contextProvider == null || !_contextProvider.TryGetContext<GameContext>(out var gameContext))
+                yield break;
+
+            var poolCollection = gameContext.PoolCollection;
+            if (poolCollection == null)
+                yield break;
+
+            var boosterBall = poolCollection.Get<BoosterBall>("boosterBall");
+            if (boosterBall == null)
+            {
+                var ballBase = poolCollection.Get<BallBase>("boosterBall");
+                boosterBall = ballBase as BoosterBall;
+            }
+
+            if (boosterBall == null)
+            {
+                Debug.LogError($"[{nameof(BallController)}] Could not get 'boosterBall' from pool!");
+                yield break;
+            }
+
+            boosterBall.InitializeBooster(_contextProvider);
+            _runningBallsInfo.AddRunningBall(boosterBall);
+
+            var jumpEnumerator = boosterBall.Jump();
+            if (jumpEnumerator != null)
+            {
+                yield return StartCoroutine(jumpEnumerator);
+            }
+
+            if (boosterBall.Go.activeInHierarchy)
+            {
+                boosterBall.ReturnToPool();
+            }
+
+            _runningBallsInfo.RemoveBall(boosterBall);
+
+            // Check if all stacks in level are cleared
+            GameManager.Instance?.CheckLevelComplete();
+        }
     }
 
     public class RunningBallsInfo

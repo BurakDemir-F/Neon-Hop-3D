@@ -61,6 +61,8 @@ namespace Game.Sorcerum
 
         public void ClearLevel()
         {
+            _worldGrid.ClearWorldGrid();
+
             foreach (var stack in _activeStacks)
             {
                 if (stack != null)
@@ -70,8 +72,6 @@ namespace Game.Sorcerum
                 }
             }
             _activeStacks.Clear();
-
-            _worldGrid.ClearWorldGrid();
 
             if (_availableBallScreen != null)
             {
@@ -101,6 +101,12 @@ namespace Game.Sorcerum
             {
                 var gridPos = stackData.GridPos;
                 var mapCell = _worldGrid.GetCell(gridPos) as StackGridCell;
+
+                if (mapCell == null)
+                {
+                    Debug.LogError($"[{nameof(LevelManager)}] No StackGridCell found at grid position {gridPos} for level '{levelData.name}'!", this);
+                    continue;
+                }
 
                 var stack = _poolCollection.Get<ItemStack>(levelData.LevelDataVo.StackPoolKey.PoolKey1);
                 stack.Initialize(stackData);
@@ -134,6 +140,8 @@ namespace Game.Sorcerum
             var stackCellList = new List<StackGridCell>();
             var emptyCellList = new List<EmptyGridCell>();
             
+            _worldGrid.PositionGridOrigin(gridData);
+
             for (int x = 0; x < gridDataDimensions.x; x++)
             {
                 for (int y = 0; y < gridDataDimensions.y; y++)

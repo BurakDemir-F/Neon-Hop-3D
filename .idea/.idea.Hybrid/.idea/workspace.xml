@@ -5,10 +5,103 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8203772f-3af4-49c8-aa94-5113814ff257" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Hybrid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Hybrid/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/mat_Black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/mat_Black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/mat_Green.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/mat_Green.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Materials/mat_Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Materials/mat_Red.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Cyan_1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Cyan_1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Cyan_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Cyan_2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Cyan_3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Cyan_3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Cyan_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Cyan_4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Cyan_6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Cyan_6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Pink_1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Pink_1.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Pink_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Pink_2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Pink_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Pink_4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Pink_5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Pink_5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Pink_6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Pink_6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Purple_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Purple_2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Purple_3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Purple_3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Purple_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Purple_4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Purple_5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Purple_5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Purple_6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Purple_6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Yellow_2.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Yellow_2.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Yellow_3.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Yellow_3.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Yellow_4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Yellow_4.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Yellow_5.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Yellow_5.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/BallBrain_Yellow_6.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/BallBrain_Yellow_6.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_01.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_01.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_01.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_01.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_02.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_02.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_02.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_02.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_03.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_03.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_03.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_03.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_04.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_04.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_04.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_04.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_05.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_05.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_05.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_05.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_06.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_06.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_06.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_06.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_07.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_07.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_07.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_07.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_08.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_08.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_08.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_08.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_09.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_09.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_09.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_09.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_10.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_10.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_10.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_10.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_11.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_11.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_11.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_11.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_12.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_12.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_12.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_12.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_13.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_13.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_13.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_13.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_14.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_14.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_14.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_14.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_15.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_15.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_15.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_15.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_16.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_16.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_16.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_16.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_17.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_17.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_17.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_17.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_18.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_18.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_18.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_18.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_19.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_19.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_19.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_19.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_20.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_20.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_20.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/Levels/LevelData_20.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/PoolConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/PoolConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/StackableItemBrain_Purple.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/StackableItemBrain_Purple.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Data/StackableItemBrain_Yellow.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Data/StackableItemBrain_Yellow.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ballbase.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ballbase.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EmptyGridCell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EmptyGridCell.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StackableItem.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StackableItem.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/StackableItemCell.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/StackableItemCell.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/ColorIdAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/ColorIdAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/IDAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/IDAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/WorkerAttributes/JumpAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Attributes/WorkerAttributes/JumpAttribute.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/BallController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/BallController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/BallBase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/BallBase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/ItemStack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/ItemStack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/StackableItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Behaviours/StackableItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Context/GameContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Context/GameContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Data/LevelDataSo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Data/LevelDataSo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Data/PoolKey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Data/PoolKey.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/BallManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/BallManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/BottomLeftGridPositionProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/BottomLeftGridPositionProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/WorldGrid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/WorldGrid.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/MapGridCell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/MapGridCell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/StackGridCell.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/StackGridCell.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game/Level/StackQueueController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game/Level/StackQueueController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Runtime/SinglePoolUnit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Scripts/Runtime/SinglePoolUnit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool/NoneAddressables/Editor/PoolConfigInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool/NoneAddressables/Editor/PoolConfigInspector.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AvailableBallScreen/AvailableBallScreen.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AvailableBallScreen/AvailableBallScreen.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AvailableBallScreen/AvailableBallScreen.uss" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AvailableBallScreen/AvailableBallScreen.uss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/LevelUIController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/LevelUIController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +129,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../Terraforming/Terraforming/Assets/Game/Player/AddressablesLocal/Scripts/PlayerWeapon/WeaponData/SpellEffectVo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Art.meta" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Data/BallBrain_Cyan_1.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Data/SimpleStackableItem_Pink.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/PropertyDrawers/SubclassSelectorDrawer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Attributes/DataAttributes/BallVisualAttribute.cs" root0="FORCE_HIGHLIGHTING" />
@@ -47,7 +141,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Data/BallDataSo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Data/LevelDataSo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Data/PoolKey.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/BallManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/EmptyGridCell.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/Grid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game/Level/GridSystem/WorldGrid.cs" root0="FORCE_HIGHLIGHTING" />
@@ -58,6 +151,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Pool/AddressablesLocal/Assets/AddressableObjectPoolCreator.asset" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/AvailableBallScreen/AvailableBallScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Settings/Mobile_RPAsset.asset" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@4eb612570652/Editor/Generation/Processors/Generator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/1b6535aa091d41cf8b3ca222ed9ceef0212600/2e/89cb2163/Transform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/1b6535aa091d41cf8b3ca222ed9ceef0212600/da/e28df4fa/Vector2Int.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/DecompilerCache/decompiler/1b6535aa091d41cf8b3ca222ed9ceef0212600/f8/9001c8b5/Vector3.cs" root0="FORCE_HIGHLIGHTING" />
@@ -117,15 +211,13 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false" ignored-value-for-modified-check="25696">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" useMixedMode="false">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="25696" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list>
-          <MonoRuntime />
-        </list>
+        <list />
       </option>
       <option name="selectedOptions">
         <list />
@@ -150,7 +242,8 @@
       <workItem from="1791055592447" duration="2789000" />
       <workItem from="1791140543277" duration="5686000" />
       <workItem from="1791196961368" duration="632000" />
-      <workItem from="1791236198599" duration="17541000" />
+      <workItem from="1791236198599" duration="18675000" />
+      <workItem from="1791497125349" duration="5783000" />
     </task>
     <task id="LOCAL-00001" summary="working on the game.">
       <option name="closed" value="true" />
@@ -200,7 +293,15 @@
       <option name="project" value="LOCAL" />
       <updated>1791326170688</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Asset and data update.">
+      <option name="closed" value="true" />
+      <created>1791328740270</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1791328740270</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
@@ -227,7 +328,8 @@
     <MESSAGE value="working on the game." />
     <MESSAGE value="changes." />
     <MESSAGE value="updates with ai." />
-    <option name="LAST_COMMIT_MESSAGE" value="updates with ai." />
+    <MESSAGE value="Asset and data update." />
+    <option name="LAST_COMMIT_MESSAGE" value="Asset and data update." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

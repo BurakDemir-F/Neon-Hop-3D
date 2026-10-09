@@ -7,6 +7,9 @@ namespace Game.Sorcerum
     {
         [SerializeField] private string _poolKey;
 
+        public PoolKey() { }
+        public PoolKey(string key) => _poolKey = key;
+
         public string PoolKey1 => _poolKey;
     }
 }
